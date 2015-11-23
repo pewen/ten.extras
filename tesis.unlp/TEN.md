@@ -1,54 +1,10 @@
 % Estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados.  
 Modelado, simulación y validación.
-%/*********************************************************************  
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT  
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT  
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT  
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT  
-***********************************************************************/  
-Trabajo Final Integrador que será presentado para obtener el grado de  
+%Trabajo Final Integrador que será presentado para obtener el grado de  
 Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid  
 Facultad de Informática  
-Universidad Nacional de La Plata.
+Universidad Nacional de La Plata
 % Versión 2015.11.23.00 (draft)
-
-\newpage
-/********************************************************************************
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-DRAFT DRAFT DRAFT DRAFT DRAFT DRAFT
-********************************************************************************/
-\newpage
 
 # Motivación
 Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares1,2,3,4,5, diodos emisores de luz (OLED)6,7,8, transistores de efecto campo (OFET)9,10,11,12, memorias moleculares13, etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos14,15,16. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
@@ -116,7 +72,9 @@ Se trabaja con alumnos de la carrera de Física para desarrollar capacidades de 
 
 # Marco teórico del fenómeno
 
-## Probabilidad de decaimiento en [0, t]
+## Modelo conceptual
+
+## Probabilidad de decaimiento en $[0, t]$
 
 La tasa de cambio de la población de cromóforos excitados $N$ es proporcional a la cantidad de cromóforos excitados, por lo que se puede escribir como
 
@@ -268,6 +226,26 @@ Y el Exciton Diffusion Length es igual que para el caso de una dimensión
 L_D = \sqrt{N} \epsilon
 \end{equation}
 
+## Artículo de referencia
+
+Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles, J. Phys. Chem. C 2008, 112, 1772-1781. American Chemical Society.
+
+# Estado del arte
+
+## Modelización
+
+## Simulación
+
+## Computación de altas prestación
+
+# Propuesta
+
+## modelo conceptual
+
+## modelo computacional
+
+## simulación de altas prestaciones
+
 # Desarrollo computacional
 Se consideran dos desarrollos
 
@@ -305,11 +283,29 @@ Se consideran dos desarrollos
 - mayor cantidad de experimentos.
 - speedup
 
+# Validación experimental
+
+## diseño de los experimentos
+
+## entorno experimental
+
+ Raspberry Pi para el desarrollo y validación
+
+## experimentos y discusión. (precisión y speedup)
+
 # Conclusiones y trabajos futuros
 
 # Bibliografía
 - Changfeng Wu, Yueli Zheng, Craig Szymanski and Jason McNeill: Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles. The Journal of Physical Chemistry C (ACS Publications).
 
-- C. A. Chung, Simulation Modeling Handbook: a Practical Approach, 2004, ISBN-10: 0849312418.
+- C. A. Chung, Simulation Modeling Handbook: a Practical Approach, 2004, ISBN-10: 0849312418
+
+- Giancarlo Zaccone, Python Parallel Programming Cookbook, Packt, 2015, ISBN: 1785289586
+
+- Gabriele Lanaro, Python High Performance Programming, Packt, 2013, ISBN: 1783288450
+
+- Jesse M. Kinder Philip Nelson, A Student's Guide to Python for Physical Modeling, 2015, ISBN: 0691170509
+
+- L. Felipe Martins, IPython Notebook Essentials, Packt, 2014,ISBN: 1783988347
 
 # Anexos

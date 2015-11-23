@@ -1,0 +1,5 @@
+cambiar el idioma en pandoc:
+https://ondahostil.wordpress.com/2015/09/18/lo-que-he-aprendido-cambiar-el-idioma-en-pandoc/
+
+Pandoc: Customized LaTeX templates for PDF generation
+http://los-pajaros-de-hogano.blogspot.com.ar/2015/01/pandoc-customized-latex-templates-for.html
