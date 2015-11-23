@@ -244,6 +244,8 @@ Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer i
 
 ## modelo computacional
 
+## Simulaciones de Montecarlo
+
 ## simulación de altas prestaciones
 
 # Desarrollo computacional
@@ -289,7 +291,9 @@ Se consideran dos desarrollos
 
 ## entorno experimental
 
- Raspberry Pi para el desarrollo y validación
+Raspberry Pi para el desarrollo y validación
+
+IPython para mostrar avances
 
 ## experimentos y discusión. (precisión y speedup)
 
