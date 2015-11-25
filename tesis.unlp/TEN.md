@@ -4,7 +4,18 @@ Modelado, simulación y validación.
 Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid  
 Facultad de Informática  
 Universidad Nacional de La Plata
-% Versión 2015.11.23.00 (draft)
+% Versión 2015.11.23.00 (draft)  
+Licencia CC BY 4.0
+
+\newpage
+
+---
+
+                                  Licencia CC BY 4.0
+
+---
+
+\newpage
 
 # Motivación
 Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares1,2,3,4,5, diodos emisores de luz (OLED)6,7,8, transistores de efecto campo (OFET)9,10,11,12, memorias moleculares13, etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos14,15,16. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
@@ -238,15 +249,34 @@ Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer i
 
 ## Computación de altas prestación
 
+**GPU**
+
+## Lenguajes de programación científica
+
+**Fortran**
+
+La comunidad científica ha usado Fortran desde siempre (las primeras versiones del lenguaje son de la década del 50, época de las tarjetas perforadas). Sin dudas, es el lenguaje más usado para resolver problemas científicos. Posee una amplia comunidad de usuarios y programas desarrollados hace décadas todavía son usados. La bibliografía y documentación es extensa.  
+Existen librerias optimizadas, serial y paralela, y fuertemente probadas para realizar virtualmente todos los cálculos necesarios. Las versiones de OpenMP y MPI soportan nativamente Fortran.
+Si el factor que va a desidir la elección del lenguaje de programación es el tiempo de ejecución, entendemos que Fortran es la elección correcta.
+
+**Python**
+
+Lenguaje creado a en el año 1991 (por lo que podemos considerarlo "moderno" comparandolo con Fortran).
+
+**Julia**
+
+
+
+
 # Propuesta
 
-## modelo conceptual
+## Modelo conceptual
 
-## modelo computacional
+## Modelo computacional
 
 ## Simulaciones de Montecarlo
 
-## simulación de altas prestaciones
+## Simulación de altas prestaciones
 
 # Desarrollo computacional
 Se consideran dos desarrollos
@@ -287,15 +317,19 @@ Se consideran dos desarrollos
 
 # Validación experimental
 
-## diseño de los experimentos
+## Diseño de los experimentos
 
-## entorno experimental
+## Entorno experimental
 
 Raspberry Pi para el desarrollo y validación
 
 IPython para mostrar avances
 
-## experimentos y discusión. (precisión y speedup)
+## Experimentos y discusión. (precisión y speedup)
+
+## Ciencia reproducible
+
+## Licencia del código
 
 # Conclusiones y trabajos futuros
 
