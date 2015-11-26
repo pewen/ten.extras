@@ -1,21 +1,25 @@
 % Estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados.  
 Modelado, simulación y validación.
-%Trabajo Final Integrador que será presentado para obtener el grado de  
+% Trabajo Final Integrador que será presentado para obtener el grado de  
 Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid  
 Facultad de Informática  
 Universidad Nacional de La Plata
-% Versión 2015.11.23.00 (draft)  
-Licencia CC BY 4.0
+% Versión 2015.11.23.00 (draft)
 
 \newpage
 
 ---
-
-                                  Licencia CC BY 4.0
+    
 
 ---
 
 \newpage
+
+\begin{figure*}[!bp]
+\centering
+	\includegraphics[width=1\linewidth]{img/cc_by.png}
+\end{figure*}
+\newpage \newpage
 
 # Motivación
 Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares1,2,3,4,5, diodos emisores de luz (OLED)6,7,8, transistores de efecto campo (OFET)9,10,11,12, memorias moleculares13, etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos14,15,16. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
@@ -63,7 +67,7 @@ Integran el equipo del Laboratorio de Microscopía Óptica Avanzada (LMOA) y par
 ## Resumen
 Se desarrolla una herramienta comutacional para calcular la eficiencia de Quenching.
 
-Mediante simulaciones de Monte Carlo se pretende estudiar la eficiencia de Quenching para una nanopartícula (NP) determinada. Estas simulaciones van a ser contrastadas con las mediciones experimentales realizadas en el Laboratorio de Microscopia Optica Avanzada (LMOA) de la Universidad Nacional de Río Cuarto (UNRC).
+Mediante simulaciones de Montecarlo se pretende estudiar la eficiencia de Quenching para una nanopartícula (NP) determinada. Estas simulaciones van a ser contrastadas con las mediciones experimentales realizadas en el Laboratorio de Microscopia Optica Avanzada (LMOA) de la Universidad Nacional de Río Cuarto (UNRC).
 
 En principio, son tres los experimentos en los que queremos corroborar la eficiencia de Quenching:
 
@@ -101,7 +105,7 @@ Donde $k$ es la constante de decaimiento total. La solución de esta ecuación d
 N = N_0e^{-kt}
 \end{equation}
 
-Ésta ecuación dice cuantos cromóforos excitados hay en cualquier tiempo $t$. Queremos determinar cuál es la probabilidad de que un cromóforo decaiga en un intervalo de tiempo $[0, t]$. Para esto, con la ayuda de (2), podemos escribir una función que sea el número de decaimientos en el intervalo $[0, t]$ como el número total de cromóforos excitados menos la cantidad de cromóforos existentes en el tiempo $t$
+Ésta ecuación dice cuantos cromóforos excitados hay en cualquier tiempo $t$. Queremos determinar cuál es la probabilidad de que un cromóforo decaiga en un intervalo de tiempo $[0, t]$. Para esto, con la ayuda de \ref{eq:N}, podemos escribir una función que sea el número de decaimientos en el intervalo $[0, t]$ como el número total de cromóforos excitados menos la cantidad de cromóforos existentes en el tiempo $t$
 
 \begin{equation}
 \label{eq:alpha}
@@ -138,14 +142,14 @@ E(X) = \sum_{i=1}^{N} E(x_i)= \sum_{i=1}^{N} (p\epsilon - q\epsilon) =  0
 r = X - E(X) = X
 \end{equation}
 
-Claramente no tiene sentido preguntarse por el valor esperado de $r$ ya que va a dar cero, de acuerdo con (6) y (7). Esto es debido a que r puede resultar positivo o negativo con la misma probabilidad, y al sumar estos valores en promedio se compensan, resultando cero su valor esperado. Por esto es útil preguntarse por el valor esperado del valor absoluto (siempre positivo) de $r$. Para esto calculamos el valor esperado de $r$ al cuadrado como
+Claramente no tiene sentido preguntarse por el valor esperado de $r$ ya que va a dar cero, de acuerdo con \ref{eq:E} y \ref{eq:r}. Esto es debido a que r puede resultar positivo o negativo con la misma probabilidad, y al sumar estos valores en promedio se compensan, resultando cero su valor esperado. Por esto es útil preguntarse por el valor esperado del valor absoluto (siempre positivo) de $r$. Para esto calculamos el valor esperado de $r$ al cuadrado como
 
 \begin{equation}
 \label{eq:E1}
 E(r^2) = E((X - E(X))^2) = E(X^2) = E\left[\left(\sum_{i=1}^{N}x_i\right)^2\right] = Var(x)
 \end{equation}
 
-Esto es por definición la varianza de $X$. El cuadrado de la sumatoria en (8) está compuesto de $N$ términos del tipo $x_i^2$, y $N(N - 1)$ términos cruzados del tipo $x_i x_j$ con $i$ distinto de $j$
+Esto es por definición la varianza de $X$. El cuadrado de la sumatoria en \ref{eq:E1} está compuesto de $N$ términos del tipo $x_i^2$, y $N(N - 1)$ términos cruzados del tipo $x_i x_j$ con $i$ distinto de $j$
 
 \begin{equation}
 \label{eq:E2}
