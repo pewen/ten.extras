@@ -323,6 +323,53 @@ Se consideran dos desarrollos
 
 ## Diseño de los experimentos
 
+**Puntos aleatorios en la esfera**
+
+* en la superficie
+
+```python
+n = 3000
+R = 5
+
+theta = np.random.uniform(low = 0, high = 2*np.pi, size = n)
+phi = np.random.uniform(low = 0, high = np.pi, size = n)
+
+x = np.sin(phi)*np.cos(theta)
+y = np.sin(phi)*np.sin(theta)
+z = np.cos(phi)
+
+fig = plt.figure(figsize=(12,12))
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(x, y, z)
+```
+\begin{figure}[!h]
+\centering
+	\includegraphics[width=1\linewidth]{img/ptos_en_superficie_1.png}
+\end{figure}
+
+
+en la figura se ve que la distribución no es homogénea
+
+mejoramos la distribución
+
+```python
+n = 3000
+theta = 2*np.pi*np.random.uniform(size=n)
+phi = np.arccos(2*np.random.uniform(size=n) - 1)
+
+x = np.sin(phi)*np.cos(theta)
+y = np.sin(phi)*np.sin(theta)
+z = np.cos(phi)
+
+fig = plt.figure(figsize=(12,12))
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(x, y, z)
+```
+
+![](img/ptos_en_superficie_2.png)
+
+\newpage
+
 ## Entorno experimental
 
 Raspberry Pi para el desarrollo y validación
