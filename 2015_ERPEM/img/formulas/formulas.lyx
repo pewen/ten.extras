@@ -5,6 +5,7 @@
 \textclass article
 \begin_preamble
 \usepackage{amsbsy}
+\usepackage{amsmath}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -180,7 +181,7 @@ Huge
 
 
 \backslash
-pmb{p = 1 - e^{(k_{ET} + k'_{ET})
+pmb{p = 1 - e^{-(k_{ET} + k'_{ET})
 \backslash
 Delta_{t}}}
 \end_layout
@@ -265,6 +266,257 @@ pmb{N
 Delta_{t} = 
 \backslash
 tau_{D}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{N = D
+\backslash
+setminus 
+\backslash
+epsilon}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{R_{j}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{R_{j_{new}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{p = 1 - e^{-k_{ET} 
+\backslash
+Delta_{t}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{p = 1 - e^{-k'_{ET} 
+\backslash
+Delta_{t}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{L_{D}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
 \end_layout
 
 \begin_layout Plain Layout
