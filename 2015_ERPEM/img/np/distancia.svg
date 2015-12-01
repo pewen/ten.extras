@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="24cm" height="24cm" viewBox="326 12 475 475" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="564" cy="250" rx="236" ry="236"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="564" cy="250" rx="236" ry="236"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="598" cy="412" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="598" cy="412" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="416" cy="343" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="416" cy="343" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="699" cy="101" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="699" cy="101" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="656" cy="274" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="656" cy="274" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="397.3" cy="181.3" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="397.3" cy="181.3" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="756" cy="238" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="756" cy="238" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="557" cy="92" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="557" cy="92" rx="13.5" ry="13.5"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="233" y="272">
+    <tspan x="233" y="272"></tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="547.454" y1="101.546" x2="415.557" y2="167.405"/>
+    <polygon style="fill: #000000" points="408.847,170.755 415.56,161.815 415.557,167.405 420.027,170.761 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="408.847,170.755 415.56,161.815 415.557,167.405 420.027,170.761 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="557" y1="105.5" x2="428.376" y2="322.154"/>
+    <polygon style="fill: #000000" points="424.547,328.604 425.353,317.452 428.376,322.154 433.951,322.557 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="424.547,328.604 425.353,317.452 428.376,322.154 433.951,322.557 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="558.923" y1="106.377" x2="596.709" y2="388.85"/>
+    <polygon style="fill: #000000" points="597.704,396.284 591.422,387.035 596.709,388.85 601.334,385.709 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="597.704,396.284 591.422,387.035 596.709,388.85 601.334,385.709 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="566.546" y1="101.546" x2="651.225" y2="252.015"/>
+    <polygon style="fill: #000000" points="654.903,258.551 645.642,252.289 651.225,252.015 654.356,247.384 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="654.903,258.551 645.642,252.289 651.225,252.015 654.356,247.384 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="570.5" y1="92" x2="738.76" y2="222.488"/>
+    <polygon style="fill: #000000" points="744.687,227.084 733.721,224.907 738.76,222.488 739.849,217.004 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="744.687,227.084 733.721,224.907 738.76,222.488 739.849,217.004 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="566.546" y1="82.4541" x2="675.88" y2="99.5002"/>
+    <polygon style="fill: #000000" points="683.291,100.656 672.64,104.055 675.88,99.5002 674.18,94.1747 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="683.291,100.656 672.64,104.055 675.88,99.5002 674.18,94.1747 "/>
+  </g>
+  <image x="432" y="204" width="40" height="42.1622" xlink:href="file:///home/fnbellomo/MEGA/Giambiani/img/np/Rj.png"/>
+</svg>

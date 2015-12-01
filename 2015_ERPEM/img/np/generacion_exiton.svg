@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="28cm" height="24cm" viewBox="283 12 543 475" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="564" cy="250" rx="236" ry="236"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="564" cy="250" rx="236" ry="236"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="598" cy="412" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="598" cy="412" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="416" cy="343" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="416" cy="343" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="699" cy="101" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="699" cy="101" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="656" cy="274" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="656" cy="274" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="397.3" cy="181.3" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="397.3" cy="181.3" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="756" cy="238" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="756" cy="238" rx="13.5" ry="13.5"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 284 230.75 C 301.75,248.5 301.75,213 319.5,230.75 C 337.25,248.5 337.25,213 355,230.75 C 372.75,248.5 372.75,213 390.5,230.75 C 408.25,244.95 408.25,227.2 418.9,230.75"/>
+    <polygon style="fill: #000000" points="426,230.75 415.35,237.85 418.9,230.75 415.35,223.65 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="426,230.75 415.35,237.85 418.9,230.75 415.35,223.65 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 430.271 297.95 C 446.862,314.541 446.862,281.359 463.453,297.95 C 480.044,314.541 480.044,281.359 496.635,297.95 C 513.227,314.541 513.227,281.359 529.818,297.95 C 546.409,311.223 546.409,294.632 556.364,297.95"/>
+    <polygon style="fill: #000000" points="563,297.95 553.045,304.586 556.364,297.95 553.045,291.314 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="563,297.95 553.045,304.586 556.364,297.95 553.045,291.314 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 351.87 455.05 C 369.62,472.8 369.62,437.3 387.37,455.05 C 405.12,472.8 405.12,437.3 422.87,455.05 C 440.62,472.8 440.62,437.3 458.37,455.05 C 476.12,469.25 476.12,451.5 486.77,455.05"/>
+    <polygon style="fill: #000000" points="493.87,455.05 483.22,462.15 486.77,455.05 483.22,447.95 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="493.87,455.05 483.22,462.15 486.77,455.05 483.22,447.95 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 682.47 143.15 C 700.22,160.9 700.22,125.4 717.97,143.15 C 735.72,160.9 735.72,125.4 753.47,143.15 C 771.22,160.9 771.22,125.4 788.97,143.15 C 806.72,157.35 806.72,139.6 817.37,143.15"/>
+    <polygon style="fill: #000000" points="824.47,143.15 813.82,150.25 817.37,143.15 813.82,136.05 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="824.47,143.15 813.82,150.25 817.37,143.15 813.82,136.05 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 484.07 49.25 C 501.82,67 501.82,31.5 519.57,49.25 C 537.32,67 537.32,31.5 555.07,49.25 C 572.82,67 572.82,31.5 590.57,49.25 C 608.32,63.45 608.32,45.7 618.97,49.25"/>
+    <polygon style="fill: #000000" points="626.07,49.25 615.42,56.35 618.97,49.25 615.42,42.15 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="626.07,49.25 615.42,56.35 618.97,49.25 615.42,42.15 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 661.67 368.35 C 679.42,386.1 679.42,350.6 697.17,368.35 C 714.92,386.1 714.92,350.6 732.67,368.35 C 750.42,386.1 750.42,350.6 768.17,368.35 C 785.92,382.55 785.92,364.8 796.57,368.35"/>
+    <polygon style="fill: #000000" points="803.67,368.35 793.02,375.45 796.57,368.35 793.02,361.25 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="803.67,368.35 793.02,375.45 796.57,368.35 793.02,361.25 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 397.27 90.45 C 415.02,108.2 415.02,72.7 432.77,90.45 C 450.52,108.2 450.52,72.7 468.27,90.45 C 486.02,108.2 486.02,72.7 503.77,90.45 C 521.52,104.65 521.52,86.9 532.17,90.45"/>
+    <polygon style="fill: #000000" points="539.27,90.45 528.62,97.55 532.17,90.45 528.62,83.35 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="539.27,90.45 528.62,97.55 532.17,90.45 528.62,83.35 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #0000ff" cx="557" cy="92" rx="13.5" ry="13.5"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="557" cy="92" rx="13.5" ry="13.5"/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="233" y="272">
+    <tspan x="233" y="272"></tspan>
+  </text>
+  <image x="460" y="233.078" width="63" height="56.8235" xlink:href="file:///home/fnbellomo/MEGA/Giambiani/img/np/hv.svg"/>
+</svg>
