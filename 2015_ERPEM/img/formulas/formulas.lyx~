@@ -3,6 +3,10 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage{amsbsy}
+\usepackage{amsmath}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -25,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -88,7 +93,9 @@ Huge
 
 \begin_layout Plain Layout
 
-k'_{ET} = 
+
+\backslash
+pmb{k'_{ET} = 
 \backslash
 sum_{j=1}^{
 \backslash
@@ -98,7 +105,14 @@ left(
 \backslash
 frac{R_{0}}{R_{j}} 
 \backslash
-right) ^{6} 
+right) ^{6}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{3}
 \end_layout
 
 \begin_layout Plain Layout
@@ -133,9 +147,18 @@ Huge
 
 \begin_layout Plain Layout
 
-k_{ET}=
+
 \backslash
-tau_{D}^{-1}
+pmb{k_{D}=
+\backslash
+tau_{D}^{-1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{2}
 \end_layout
 
 \begin_layout Plain Layout
@@ -170,9 +193,18 @@ Huge
 
 \begin_layout Plain Layout
 
-p = 1 - e^{(k_{ET} + k'_{ET})
+
 \backslash
-Delta_{t}}
+pmb{p = 1 - e^{-(k_{D} + k'_{ET})
+\backslash
+Delta_{t}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{1}
 \end_layout
 
 \begin_layout Plain Layout
@@ -207,9 +239,183 @@ Huge
 
 \begin_layout Plain Layout
 
-N = 
+
+\backslash
+pmb{P_{TE} = 
+\backslash
+frac{k_{TE}}{k_{TE} + k_{D}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{P_{D} = 
+\backslash
+frac{k_{D}}{k_{TE} + k_{D}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{N = 
 \backslash
 frac{D}{
+\backslash
+epsilon}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{N
+\backslash
+Delta_{t} = 
+\backslash
+tau_{D}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{N = D/ 
 \backslash
 epsilon}
 \end_layout
@@ -246,11 +452,416 @@ Huge
 
 \begin_layout Plain Layout
 
-N
+
 \backslash
-Delta_{t} = 
+pmb{R_{j}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-tau_{D}
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{R_{j_{new}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{p = 1 - e^{-k_{ET} 
+\backslash
+Delta_{t}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{p = 1 - e^{-k'_{ET} 
+\backslash
+Delta_{t}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{L_{D}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{L_{D_{simulado}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{L_{D_{simulado}} = 
+\backslash
+sqrt{
+\backslash
+frac{
+\backslash
+sum_{i=1}^{j} d_{i}^{2}}{j}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{7}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{L_{D}=
+\backslash
+sqrt{N}
+\backslash
+epsilon = 
+\backslash
+sqrt{D
+\backslash
+epsilon} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{6}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{k_{D}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{P_{TE}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
 \end_layout
 
 \begin_layout Plain Layout

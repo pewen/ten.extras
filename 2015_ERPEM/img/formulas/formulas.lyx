@@ -112,6 +112,13 @@ right) ^{6}}
 
 
 \backslash
+tag{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 end{equation}
 \end_layout
 
@@ -142,7 +149,7 @@ Huge
 
 
 \backslash
-pmb{k_{ET}=
+pmb{k_{D}=
 \backslash
 tau_{D}^{-1}}
 \end_layout
@@ -151,6 +158,13 @@ tau_{D}^{-1}}
 
 
 \backslash
+tag{2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 end{equation}
 \end_layout
 
@@ -181,9 +195,108 @@ Huge
 
 
 \backslash
-pmb{p = 1 - e^{-(k_{ET} + k'_{ET})
+pmb{p = 1 - e^{-(k_{D} + k'_{ET})
 \backslash
 Delta_{t}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{P_{TE} = 
+\backslash
+frac{k_{TE}}{k_{TE} + k_{D}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{P_{D} = 
+\backslash
+frac{k_{D}}{k_{TE} + k_{D}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
 \end_layout
 
 \begin_layout Plain Layout
@@ -302,9 +415,7 @@ Huge
 
 
 \backslash
-pmb{N = D
-\backslash
-setminus 
+pmb{N = D/ 
 \backslash
 epsilon}
 \end_layout
@@ -517,6 +628,246 @@ pmb{L_{D}}
 
 \backslash
 tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{L_{D_{simulado}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{L_{D_{simulado}} = 
+\backslash
+sqrt{
+\backslash
+frac{
+\backslash
+sum_{i=1}^{j} d_{i}^{2}}{j}} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{7}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{L_{D}=
+\backslash
+sqrt{N}
+\backslash
+epsilon = 
+\backslash
+sqrt{D
+\backslash
+epsilon} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{6}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{k_{D}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Huge
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pmb{E = 
+\backslash
+sum_{j=1}^{3}
+\backslash
+frac{1}{n_{j}} 
+\backslash
+sum_{i=1}^{n_{j}} (Q_{e_{i}} - Q_{s_{i}})^{2} }
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tag{8}
 \end_layout
 
 \begin_layout Plain Layout
