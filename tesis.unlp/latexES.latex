@@ -3,6 +3,19 @@
 \usepackage{draftwatermark}
 \SetWatermarkScale{1.5}
 
+\usepackage[
+    type={CC},
+    modifier={by},
+    version={4.0},
+    lang={Spanish},
+]{doclicense}
+
+\usepackage{picinpar}
+\usepackage{float}
+\usepackage{wrapfig}
+%\floatstyle{boxed}
+\restylefloat{figure}
+
 \usepackage{stfloats}
 \usepackage[spanish,es-tabla]{babel}
 $if(fontfamily)$
@@ -156,7 +169,19 @@ $if(title)$
 $endif$
 \begin{figure}[b]
 \centering
-  \includegraphics[width=2\linewidth]{img/UNLP.jpg}
+  \includegraphics[scale=1.5]{img/UNLP.jpg}
+  %\includegraphics[width=0.15\linewidth]{img/cc_by.png}
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  \doclicenseThis
 \end{figure}
 $if(abstract)$
 \begin{abstract}
