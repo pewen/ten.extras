@@ -79,7 +79,7 @@ El LMOA tiene amplia experiencia en la investigación experimental, pero destaco
 ## Publicaciones relacionadas a este trabajo
 * 11º Encuentro Regional de Probabilidades y Estadística Matemática ERPEM  
 Departamento de Matemáticas, FCEFQyN, UNRC, 2-3 de diciembre, 2015. \footnote{11º Encuentro Regional de Probabilidades y Estadística Matemática (ERPEM), FCEFQyN UNRC \href{http://intra.exa.unrc.edu.ar/eventos/erpem}{http://intra.exa.unrc.edu.ar/eventos/erpem}}  
-Titulo: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelización y validación con datos experimentales* (poster) \href{https://github.com/pewen/ten.extras/raw/master/2015_ERPEM/poster_TEN_ERPEM_2015.pdf}{http://tiny.cc/bhkz6x}
+Titulo: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelización y validación con datos experimentales* (poster) \href{https://github.com/pewen/ten.extras/raw/master/2015_ERPEM/poster_TEN_ERPEM_2015_comprimido.pdf}{http://tiny.cc/quc26x}
 
 * XVII Juan José Giambiagi Winter School. Light and light-based technologies.  
 Departamento de Física J.J. Giambiagi, FCEyN, UBA, 3-7 de agosto, 2015. \footnote{XVII Giambiagi Winter School, Departamento de Física, FCEyN UBA \href{http://giambiagi2015.df.uba.ar}{http://giambiagi2015.df.uba.ar}}  
