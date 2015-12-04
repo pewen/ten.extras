@@ -1,6 +1,6 @@
-# ten extras
+# TEN
 
-Presentaciones realizadas.
+## Presentaciones realizadas
 
 * 11º Encuentro Regional de Probabilidades y Estadística Matemática ERPEM  
 Departamento de Matemáticas, FCEFQyN, Universidad Nacional de Río Cuarto, 2 y 3 
