@@ -4,7 +4,7 @@ Modelización, simulación y validación.
 Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid  
 Facultad de Informática  
 Universidad Nacional de La Plata
-% Versión 2015.12.03.00 (draft)
+% Versión 2015.12.04.00 (draft)
 
 \newpage
 
@@ -20,7 +20,7 @@ Universidad Nacional de La Plata
 
 # Motivación
 
-Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares1,2,3,4,5, diodos emisores de luz (OLED)6,7,8, transistores de efecto campo (OFET)9,10,11,12, memorias moleculares13, etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos14,15,16. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
+Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares [@Lindstrom2006], [@Oregan1991], [@Gratzel2001], [@Bach1998], [@Asbury2001], diodos emisores de luz (OLED) [@Kulkarni2004], [@Chou2007], [@Gather2011], transistores de efecto campo (OFET) [@Mabeck2006], [@Dimitrakopoulos2002], [@Sirringhaus2005], [@Zaumseil2007], memorias moleculares [@Scott2007], etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos [@Lupton2010], [@Lupton2012], 16. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
 Consecuentemente, el funcionamiento y desempeño de dispositivos orgánicos-electrónicos basados en polímeros conjugados depende en gran medida de procesos fotofísicos elementales de transferencia de energía (TE), generación, transporte y recombinación de carga (GTRC) que ocurren entre cromóforos en el seno del polímero y en las interfaces orgánicas/inorgánicas (donde ocurre el contacto eléctrico entre polímero y electrodos)17.  
 Muchos de estos dispositivos orgánicos-electrónicos se componen de películas ultra delgadas de polímero amorfos con alta a moderada heterogeneidad espacial y temporal. Esta heterogeneidad dificulta un estudio detallado de procesos TE y GTRC en estos materiales por técnicas convencionales que miden promedio de propiedades. El estudio de procesos TE y GTRC a nano-escala en películas poliméricas ultra-delgadas, nanopartículas (NPs) o moléculas poliméricas individuales utilizando técnicas avanzadas de microscopia de fluorescencia (por ejemplo espectroscopia de molécula/partícula individual) permite desentrañar la heterogeneidad mencionada14,15,16. En particular estas técnicas permiten la determinación de la distribución real de propiedades relevantes mediante su medición de a una partícula por vez en lugar de medir el promedio de un gran conjunto de partículas o moléculas. Debido a que las especies cargadas (polarones, cationes radicales o aniones radicales) en polímeros conjugados resultantes de los procesos GTRC son generalmente no fluorescentes su determinación es indirecta y se basa en: a) desactivación de fluorescencia de estados electrónicos excitados (excitones, cromóforos excitados) mediante especies cargadas18,19,20,21,22,23,24,25,26 o b) generación de estados electrónicos excitados emisores mediante recombinación de especies cargadas (electroluminiscencia, EL)20,25,27,28 c) Así mismo también es posible determinar la TE de excitación entre los cromóforos intrínsecos del polímero y cromóforos dopantes incluidos en la matriz polimérica en pequeña cantidad con el fin de ajustar sus propiedades optoelectrónicas. Por otro lado para complementar, contrastar y validar los estudios y resultados experimentales es de gran utilidad la creación de modelos computacionales que permitan simular los procesos de TE y GTRC en esos materiales.
 
@@ -260,7 +260,11 @@ Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer i
 
 ## Computación de altas prestación
 
-**GPU**
+**GPU** (introduicción cap 2, Piccoli)
+
+Las unidades de procesamiento gráfico, GPU, se han convertido en una parte integral de los sistemas actuales de computación. El bajo costo y marcado incremento del rendimiento, permitieron su fácil incorporación al mercado. En los últimos años, su evolución implicó un cambio, dejó de ser un procesador gráfico potente para convertirse en un co-procesador apto para el desarrollo de aplicaciones paralelas de propósito general con demanda de anchos de banda de procesamiento y de memoria sustancialmente superiores a los ofrecidos por la CPU.  
+La rápida adopción de las GPU como computadora paralela de propósito general se vio favorecida por el incremento tanto de sus capacidades como de las facilidades y herramientas de programación. Actualmente la GPU se ha posicionado como una alternativa atractiva a los sistemas tradicionales de computación paralela.  
+
 
 ## Lenguajes de programación científica
 
@@ -276,9 +280,9 @@ Lenguaje creado a en el año 1991 (por lo que podemos considerarlo "moderno" com
 
 Ecosistema científico: IPython/Jupyter, Numpy, Matplotlib, Scipy. Entorno de programación interactivo de vanguardia, simple, libre, gratuito y multiplataforma.
 
-Numpy es la base y añade a Python funcionalidades para el manejo de matrices y la realización de operaciones matriciales y vectoriales de forma sencilla y eficiente (puede usar MKL y BLAS para mejorar el rendimiento).
+Numpy brinda funcionalidades para trabajar con matrices.
 
-Scipy es la biblioteca científica y usa Numpy como base. Con Scipy se añaden todas las funcionalidades que un ingeniero, estadísta, matemático,… puede querer para el tratamiento de señales, creación de nuevos algoritmos, etc. Algunos ejemplos de paquetes que nos podemos encontrar son: scipy.fftpack, scipy.stats o scipy.optimize. Como se puede ver, este es el equivalente a los Toolboxes y al core de Maltab.
+Scipy es la biblioteca científica y usa Numpy como base.
 
 Matplotlib
 
@@ -488,9 +492,20 @@ Analizar métodos alternativos al que usa Numpy para generar números random, po
 * The Scalable Parallel Random Number Generators Library (SPRNG)
 http://www.sprng.org
 
-# Referencias
+# Referencias / Citas
+
+Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles, J. Phys. Chem. C 2008, 112, 1772-1781. American Chemical Societ
+
+van Rossum, G. and Drake, F. L. (eds), 2006. Python Reference Manual,  
+Python Software Foundation,. http://docs.python.org/ref/ref.html.
 
 Fernando Pérez, Brian E. Granger, IPython: A System for Interactive Scientific Computing, Computing in Science and Engineering, vol. 9, no. 3, pp. 21-29, May/June 2007, doi:10.1109/MCSE.2007.53. URL: \href{http://ipython.org}{http://ipython.org}
+
+Numpy
+
+MPI4Python
+
+Hunter, J. D., Matplotlib: A 2D graphics environment, Computing In Science \& Engineering, Volume 9, Numbre 3, Pages 90--95. publisher IEEE COMPUTER SOC, year 2007.
 
 Ma. Belén Oviedo, Thesis: Dinámica Cuántica de Sistemas Moleculares Complejos en Tiempo Real. URL: \href{http://tiny.cc/57316x}{http://tiny.cc/57316x}
 
@@ -502,6 +517,10 @@ URL: \href{http://math.stackexchange.com/questions/87230/picking-random-points-i
 
 UNC - FAMAF- GPGPU Computing Group \href{http://www.famaf.unc.edu.ar/grupos/GPGPU/}{http://www.famaf.unc.edu.ar/grupos/GPGPU/}
 
+Emmanuel N. Millán , Silvana B. Goirán, María Fabiana Piccoli, Carlos García Garino, Julieta N. Aranibar, Eduardo M. Bringa, Monte Carlo simulations of settlement dynamics in GPUs, DOI:10.1007/s10586-015-0501-5, Cluster Computing, Springer US.
+
+Hans Petter Langtangen, Monte Carlo Simulation with Cython, Sep 24, 2012.  
+https://hplgit.github.io/teamods/MC_cython/main_MC_cython.pdf
 
 # Bibliografía
 - Changfeng Wu, Yueli Zheng, Craig Szymanski and Jason McNeill: Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles. The Journal of Physical Chemistry C (ACS Publications).
@@ -514,10 +533,12 @@ UNC - FAMAF- GPGPU Computing Group \href{http://www.famaf.unc.edu.ar/grupos/GPGP
 
 - Gabriele Lanaro, Python High Performance Programming, Packt, 2013, ISBN: 1783288450
 
-- Jesse M. Kinder Philip Nelson, A Student's Guide to Python for Physical Modeling, 2015, ISBN: 0691170509
+- Jesse M. Kinder Philip Nelson, A Student's Guide to Python for Physical Modeling, 2015, ISBN: 0691170509 
 
 - L. Felipe Martins, IPython Notebook Essentials, Packt, 2014,ISBN: 1783988347
 
 # Anexos
 
 ## Licencia del código
+
+# Bibliografía
