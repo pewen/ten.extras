@@ -1,0 +1,33 @@
+TEN 2015-12-01 11:05:29.109393
+
+Linux-4.2.0-1-amd64-x86_64-with-debian-stretch-sid
+uname_result(system='Linux', node='ein', release='4.2.0-1-amd64', version='#1 SMP Debian 4.2.6-1 (2015-11-10)', machine='x86_64', processor='')
+
+Input parameters:
+-----------------
+NP radius mean: 15.000 nm
+NP radius deviation: 0.000 nm
+Foster radius: 3.140 nm
+Mean free path: 4.000 nm
+Tau_D: 0.333 ns
+Number of acceptors: [0, 40, 100, 200, 400, 1000]
+Epsilon: 2.000 nm
+Number of exitations: 5000
+Delta_t: 0.167 ns
+
+Output parameters:
+------------------
+L_D = 2.472113 nm
+Probability of decay: 0.393469
+Total time = 8.655 seg  with 2 process
+
++--------------+------------------+---------------------+----------------------+------------------+------------------+
+| Nº acceptors | Amount of decays | Amount of transfers | Quenching efficiency | Step's Walk mean | Total time [seg] |
++--------------+------------------+---------------------+----------------------+------------------+------------------+
+|      0       |      5000.0      |         0.0         |         0.0          |      1.547       |      0.8467      |
+|      40      |      3014.0      |        1986.0       |        0.3972        |      0.8224      |      0.8762      |
+|     100      |      1625.0      |        3375.0       |        0.675         |      0.3774      |      0.9192      |
+|     200      |      804.0       |        4196.0       |        0.8392        |      0.1256      |      1.0913      |
+|     400      |      281.0       |        4719.0       |        0.9438        |      0.0212      |      1.4921      |
+|     1000     |       54.0       |        4946.0       |        0.9892        |      0.0004      |      2.9069      |
++--------------+------------------+---------------------+----------------------+------------------+------------------+
