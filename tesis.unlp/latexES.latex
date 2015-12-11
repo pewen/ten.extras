@@ -1,7 +1,17 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
-\usepackage{draftwatermark}
-\SetWatermarkScale{1.5}
+\usepackage{paralist}
+\usepackage{numprint, xspace, paralist}
+\usepackage{cleveref}
+\usepackage[expert]{mathdesign}
+\usepackage{bera}
+\usepackage{epigraph}
+
+\usepackage[cc]{titlepic}
+\bibliographystyle{alpha}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkScale{1.5}
 
 \usepackage[
     type={CC},
@@ -165,6 +175,8 @@ $endfor$
 
 \begin{document}
 $if(title)$
+%\titlepic{\includegraphics[width=0.7\textwidth]{img/stamp-draft.jpg}}
+\titlepic{\includegraphics[width=0.5\textwidth]{img/draft-stamp.jpg}}
 \maketitle
 $endif$
 \begin{figure}[b]

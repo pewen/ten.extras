@@ -1,13 +1,13 @@
 % Estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados.  
 Modelización, simulación y validación.
-% Daniel Arnoldo Bellomo  
-Directora: Dra. Dolores Isabel Rexachs del Rosario  
-Codirector: Dr. Marcelo Naiouf
+% Daniel Arnoldo Bellomo,  
+Directora:  Dolores Isabel Rexachs del Rosario,  
+Codirector:  Marcelo Naiouf
 %Trabajo Final Integrador que será presentado para obtener el grado de  
-*Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid*  
+**Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid**  
 Facultad de Informática  
-Universidad Nacional de La Plata  
-**Versión 2015.12.10.00**
+Universidad Nacional de La Plata
+Versión 2015.12.10.00
 
 \begin{figure}[!bp]
 \centering
@@ -554,7 +554,7 @@ http://www.sprng.org
 
  The MIT License (MIT)
 
-Copyright © 2015 Laboratorio de Microscopia Óptica Avanzada - UNRC
+Copyright © 2015 Pewen.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
