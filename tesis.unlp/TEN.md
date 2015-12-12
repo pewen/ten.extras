@@ -1,25 +1,24 @@
-% Estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados.  
-Modelización, simulación y validación.
-% Daniel Arnoldo Bellomo  
-Directora: Dra. Dolores Isabel Rexachs del Rosario  
-Codirector: Dr. Marcelo Naiouf
-%Trabajo Final Integrador que será presentado para obtener el grado de  
-*Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid*  
-Facultad de Informática  
-Universidad Nacional de La Plata  
-**Versión 2015.12.10.00**
-
 \begin{figure}[!bp]
-\centering
-\includegraphics[scale=0.7]{img/first+draft.jpg}
+	\centering
+	\includegraphics[width=17.5cm]{img/first+draft.jpg}
 \end{figure}
 
 # Introducción 
+
+---
+
+> **Nota de Lola** 
+> planteamiento general del tema
+
+---
 
 Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares [@Lindstrom2006], [@Oregan1991], [@Gratzel2001], [@Bach1998], [@Asbury2001], diodos emisores de luz (OLED) [@Kulkarni2004], [@Chou2007], [@Gather2011], transistores de efecto campo (OFET) [@Mabeck2006], [@Dimitrakopoulos2002], [@Sirringhaus2005], [@Zaumseil2007], memorias moleculares [@Scott2007], etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos [@Lupton2010], [@Lupton2012], [@Schwartz2008]. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
 Consecuentemente, el funcionamiento y desempeño de dispositivos orgánicos-electrónicos basados en polímeros conjugados depende en gran medida de procesos fotofísicos elementales de transferencia de energía (TE), generación, transporte y recombinación de carga (GTRC) que ocurren entre cromóforos en el seno del polímero y en las interfaces orgánicas/inorgánicas (donde ocurre el contacto eléctrico entre polímero y electrodos) [@Zhu2009].  
 
 ## Motivación
+
+> Nota de Lola  
+> razones por las que el autor ha decidido trabajar sobre el tema
 
 Muchos de estos dispositivos orgánicos-electrónicos se componen de películas ultra delgadas de polímero amorfos con alta a moderada heterogeneidad espacial y temporal. Esta heterogeneidad dificulta un estudio detallado de procesos TE y GTRC en estos materiales por técnicas convencionales que miden promedio de propiedades. El estudio de procesos TE y GTRC a nano-escala en películas poliméricas ultra-delgadas, nanopartículas (NPs) o moléculas poliméricas individuales utilizando técnicas avanzadas de microscopia de fluorescencia (por ejemplo espectroscopia de molécula/partícula individual) permite desentrañar la heterogeneidad mencionada [@Lupton2010], [@Lupton2012], [@Schwartz2008]. En particular estas técnicas permiten la determinación de la distribución real de propiedades relevantes mediante su medición de a una partícula por vez en lugar de medir el promedio de un gran conjunto de partículas o moléculas. Debido a que las especies cargadas (polarones, cationes radicales o aniones radicales) en polímeros conjugados resultantes de los procesos GTRC son generalmente no fluorescentes su determinación es indirecta y se basa en:
 
@@ -27,13 +26,20 @@ a. Desactivación de fluorescencia de estados electrónicos excitados (excitones
 b. Generación de estados electrónicos excitados emisores mediante recombinación de especies cargadas (electroluminiscencia, EL) [@Chang2008], [@Chang2009] , [@Nothaft2012_1], [@Nothaft2012_2]
 c. Así mismo también es posible determinar la TE de excitación entre los cromóforos intrínsecos del polímero y cromóforos dopantes incluidos en la matriz polimérica en pequeña cantidad con el fin de ajustar sus propiedades optoelectrónicas.
 
-Por otro lado para complementar, contrastar y validar los estudios y resultados experimentales es de gran utilidad la creación de modelos computacionales que permitan simular los procesos de TE y GTRC en esos materiales.
+Por otro lado para complementar, contrastar y validar los estudios y resultados experimentales es de gran utilidad la creación de *modelos computacionales que permitan simular los procesos* de TE y GTRC en esos materiales.
+
+El LMOA posee un equipamiento de última generación y un grupo de investigación de primer nivel. Desarrolla experimentación básica publicando sus trabajos en prestigiosas revistas y congresos. Se presenta el necesidad de comenzar a desarrollar simulaciones computacionales para avanzar en las investigaciones.
 
 ## Objetivos
 
-El objetivo general de este trabajo consiste en proponer un modelo (integral) computacional para el estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados. Este modelo comprende el proceso de modelización, simulación, validación y técnicas de computación de alto desempeño para calcular la energía de Quenching y poder así continuar las investigaciones del tema que realiza el Laboratorio de Microscopía Óptica Avanzada (LMOA) de la Facultad de Ciencias Exactas Físico-Químicas y Naturales (FCEFQyN) de la Universidad Nacional de Río Cuarto (UNRC).
+> Nota de Lola:  
+> Objetivos:
+> * general
+> * especificos
+> descripcion gral del trabajo (resumen)
+> estructura de la memoria
 
-El LMOA posee un equipamiento de última generación y RRHH de primer nivel. Desarrolla experimentación básica publicando sus trabajos en prestigiosas revistas y congresos. Se presenta el necesidad de comenzar a desarrollar simulaciones computacionales para avanzar en las investigaciones.
+El objetivo general de este trabajo consiste en proponer un modelo (integral) computacional para el estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados. Este modelo comprende el proceso de modelización, simulación, validación y técnicas de computación de alto desempeño para calcular la energía de Quenching y poder así continuar las investigaciones del tema que realiza el Laboratorio de Microscopía Óptica Avanzada (LMOA) de la Facultad de Ciencias Exactas Físico-Químicas y Naturales (FCEFQyN) de la Universidad Nacional de Río Cuarto (UNRC).
 
 Parte de los objetivos es el desarrollo de habilidades y capacidades que permitan optimizar el abordaje multidisciplinar requerido cuando se colabora con profesionales de disciplinas diversas, como es el caso de la investigación básica en el laboratorio.
 
@@ -43,22 +49,6 @@ En este contexto, los temas a abordar comprenden el análisis del sistema, la co
 
 Este proyecto de investigación articula la colaboración entre un grupo de trabajo perteneciente a la UNRC, compuesto por personal técnico, personal docente, alumnos de grado y postgrado a la Facultad de Ciencias Exactas Fisicoquímica y Naturales UNRC; docentes e investigadores del HPC4EAS Research Group perteneciente a la Universidad Autónoma de Barcelona y docentes e investigadores del Instituto de Investigación en Informática LIDI perteneciente a la UNLP. El grupo involucra el trabajo coordinado de 8 personas y cuenta con apoyo económico de SECyT UNRC, ANPCyT-MINCyT Argentina, MINCyT Córdoba y CONICET. Así mismo el proyecto está vinculado mediante la formación de estudiantes a los siguientes programas educativos: Licenciatura en Física y Licenciatura en Química UNRC, Doctorado en Ciencias Químicas UNRC, Doctorado en Física UBA y Maestría en Computación de Alto Desempeño UNLP.
 
-## Integrantes
-
-**Alumno**
-
-* Daniel Arnoldo Bellomo, alumno de la Maestría en Computación de alto Desempeño (Universidad Nacional de La Plata).
-
-**Directores**
-
-* Dra. Dolores Isabel Rexachs del Rosario (Universidad Autónoma de Barcelona)
-* Dr. Rodrigo Emiliano Palacios (Universidad Nacional de Río Cuarto)
-* Dr. Marcelo Naiouf (Universidad Nacional de La Plata)
-* Dr. Carlos Alberto Chesta (Universidad Nacional de Río Cuarto)
-
-**Colaboradores**
-
-Integran el equipo del Laboratorio de Microscopía Óptica Avanzada (LMOA) y participan del presente trabajo: Lic. Rodrigo Ponsio (doctorando), Franco Bellomo y Lucas Bellomo (estudiantes de Lic. en Física).
 
 ## Resumen
 Se desarrolla una herramienta comutacional para calcular la eficiencia de Quenching.
@@ -75,12 +65,12 @@ El LMOA tiene amplia experiencia en la investigación experimental, pero destaco
 
 ## Publicaciones relacionadas a este trabajo
 * 11º Encuentro Regional de Probabilidades y Estadística Matemática ERPEM  
-Departamento de Matemáticas, FCEFQyN, UNRC, 2-3 de diciembre, 2015. \footnote{11º Encuentro Regional de Probabilidades y Estadística Matemática (ERPEM), FCEFQyN UNRC \href{http://intra.exa.unrc.edu.ar/eventos/erpem}{http://intra.exa.unrc.edu.ar/eventos/erpem}}  
-Titulo: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelización y validación con datos experimentales* (poster) \href{https://github.com/pewen/ten.extras/raw/master/2015_ERPEM/poster_TEN_ERPEM_2015_comprimido.pdf}{http://tiny.cc/quc26x}
+Departamento de Matemáticas, FCEFQyN, UNRC, 2-3 de diciembre, 2015 \footnote{11º Encuentro Regional de Probabilidades y Estadística Matemática (ERPEM), FCEFQyN UNRC. \url{http://intra.exa.unrc.edu.ar/eventos/erpem}}  
+Titulo: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelización y validación con datos experimentales* (poster) \url{https://github.com/pewen/ten.extras/raw/master/2015_ERPEM/poster_TEN_ERPEM_2015_comprimido.pdf}
 
 * XVII Juan José Giambiagi Winter School. Light and light-based technologies.  
-Departamento de Física J.J. Giambiagi, FCEyN, UBA, 3-7 de agosto, 2015. \footnote{XVII Giambiagi Winter School, Departamento de Física, FCEyN UBA \href{http://giambiagi2015.df.uba.ar}{http://giambiagi2015.df.uba.ar}}  
-Título: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelado y contraste con datos experimentales* (poster) \href{https://github.com/pewen/ten.extras/raw/master/2015_Giambiagi/poster_Giambiani.compressed.pdf}{http://tiny.cc/yikz6x}
+Departamento de Física J.J. Giambiagi, FCEyN, UBA, 3-7 de agosto, 2015 \footnote{XVII Giambiagi Winter School, Departamento de Física, FCEyN UBA. \url{http://giambiagi2015.df.uba.ar}}  
+Título: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelado y contraste con datos experimentales* (poster) \url{https://github.com/pewen/ten.extras/raw/master/2015_Giambiagi/poster_Giambiani.compressed.pdf}
 
 ## Formación de RRHH en programación científica
 Se trabaja con alumnos de la carrera de Física para desarrollar capacidades de programación científica y HPC aplicadas a física computacional. Esta actividad pemitite la integración por parte de los alumnos en proyectos reales de la facultad, permitiendo formar parte de grupos de investigación y hacer aportes desde su área estecífica de formación desarrollando modelos computacionales.
@@ -102,8 +92,8 @@ El **capítulo 7** detalla las conclusiones y trabajos futuros.
 El **capítulo 8** tiene los anexos (licencia del código).
 
 \begin{figure}[!bp]
-\centering
-\includegraphics[scale=2]{img/stamp-draft.jpg}
+	\centering
+	\includegraphics[width=10cm]{img/stamp-draft.jpg}
 \end{figure}
 
 # Marco teórico del fenómeno
@@ -271,8 +261,8 @@ L_D = \sqrt{N} \epsilon
 \end{equation}
 
 \begin{figure}[!bp]
-\centering
-\includegraphics[scale=2]{img/draft_1.jpg}
+	\centering
+	\includegraphics[]{img/draft_1.jpg}
 \end{figure}
 
 # Estado del arte
@@ -324,8 +314,8 @@ Fue diseñado para computación distribuida y en paralelo,
 [@Dalcin2005] 
 
 \begin{figure}[!bp]
-\centering
-\includegraphics[scale=2]{img/draft_1.jpg}
+	\centering
+	\includegraphics[]{img/draft_1.jpg}
 \end{figure}
 
 # Propuesta
@@ -340,7 +330,7 @@ Fue diseñado para computación distribuida y en paralelo,
 
 \begin{figure}[!bp]
 \centering
-\includegraphics[scale=1]{img/draft-stamp.jpg}
+\includegraphics[width=10cm]{img/draft-stamp.jpg}
 \end{figure}
 
 # Desarrollo computacional
@@ -381,8 +371,8 @@ Se consideran dos desarrollos
 - speedup
 
 \begin{figure}[!bp]
-\centering
-\includegraphics[scale=2]{img/draft_1.jpg}
+	\centering
+	\includegraphics[]{img/draft_1.jpg}
 \end{figure}
 
 # Validación experimental
@@ -411,7 +401,7 @@ ax.scatter(x, y, z)
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/ptos_en_superficie_1.png}
+	\includegraphics[width=13cm]{img/ptos_en_superficie_1.png}
 	\caption{\label{fig:ptos_en_superficie_1} distribución no uniforme}
 \end{figure}
 
@@ -435,7 +425,7 @@ ax.scatter(x, y, z)
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/ptos_en_superficie_2.png}
+	\includegraphics[width=15cm]{img/ptos_en_superficie_2.png}
 	\caption{\label{fig:ptos_en_superficie_2} distribución uniforme}
 \end{figure}
 
@@ -465,7 +455,7 @@ ax.scatter(x, y, z)
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/ptos_en_interior_1.png}
+	\includegraphics[width=15cm]{img/ptos_en_interior_1.png}
 	\caption{\label{fig:ptos_en_interior_1} distribución no uniforme}
 \end{figure}
 
@@ -501,7 +491,7 @@ ax.scatter(x_l, y_l, z_l)
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/ptos_en_interior_2.png}
+	\includegraphics[width=15cm]{img/ptos_en_interior_2.png}
 	\caption{\label{fig:ptos_en_interior_2} distribución uniforme}
 	\end{figure}
 
@@ -512,8 +502,6 @@ lo que funciona correctamente pero demasiado lento.
 El el foro de matemática \href{https://math.stackexchange.com/questions/87230/picking-random-points-in-the-volume-of-sphere-with-uniform-probability}{math.stackexchange.com} encontramos el método eficiente para obtener puntos al azar en el volumen de esfera con probabilidad uniforme \footnote{Picking random points in the volume of sphere with uniform probability http://tiny.cc/nycy6x}.
 
 Suponemos la esfera centrada en el origen $(0,0,0)$.
-
-
 
 \newpage
 
@@ -529,7 +517,7 @@ IPython/Jupyter para mostrar avances
 
 \begin{figure}[!bp]
 \centering
-\includegraphics[scale=1]{img/draft-stamp.jpg}
+\includegraphics[width=10cm]{img/draft-stamp.jpg}
 \end{figure}
 
 # Conclusiones y trabajos futuros
@@ -545,16 +533,28 @@ http://www.sprng.org
 
 \begin{figure}[!bp]
 \centering
-\includegraphics[scale=1]{img/draft-stamp.jpg}
+\includegraphics[width=15cm]{img/draft-stamp.jpg}
 \end{figure}
 
 # Anexos
+
+## Integrantes del equipo del Laboratorio de Microscopía Óptica Avanzada
+
+El Laboratorio de Microscopía Óptica Avanzada (LMOA) es dirigido por el Dr. Rodrigo Emiliano Palacios. Integran el equipo y participan del presente trabajo: Lic. Rodrigo Ponsio (doctorando), Franco Bellomo y Lucas Bellomo (estudiantes de Lic. en Física).
+
+## Licencia del documento
+
+\begin{wrapfigure}{r}{0\textwidth}
+	\includegraphics[width=3.5cm]{img/by.eps}
+\end{wrapfigure}
+
+Esta obra está bajo Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0) \href{http://creativecommons.org/licenses/by/4.0}{http://creativecommons.org/licenses/by/4.0}
 
 ## Licencia del código
 
  The MIT License (MIT)
 
-Copyright © 2015 Laboratorio de Microscopia Óptica Avanzada - UNRC
+Copyright © 2015 Laboratorio de Microscopia Óptica Avanzada UNRC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
