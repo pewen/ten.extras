@@ -3,43 +3,33 @@
 	\includegraphics[width=17.5cm]{img/first+draft.jpg}
 \end{figure}
 
-# Introducción 
+# Introducción
 
----
-
-> **Nota de Lola** 
+> **Nota de Lola**  
 > planteamiento general del tema
 
----
-
-Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares [@Lindstrom2006], [@Oregan1991], [@Gratzel2001], [@Bach1998], [@Asbury2001], diodos emisores de luz (OLED) [@Kulkarni2004], [@Chou2007], [@Gather2011], transistores de efecto campo (OFET) [@Mabeck2006], [@Dimitrakopoulos2002], [@Sirringhaus2005], [@Zaumseil2007], memorias moleculares [@Scott2007], etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos [@Lupton2010], [@Lupton2012], [@Schwartz2008]. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
+Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares [@Lindstrom2006], diodos emisores de luz (OLED) [@Kulkarni2004], transistores de efecto campo (OFET) [@Mabeck2006], memorias moleculares [@Scott2007], etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos [@Lupton2010]. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
 Consecuentemente, el funcionamiento y desempeño de dispositivos orgánicos-electrónicos basados en polímeros conjugados depende en gran medida de procesos fotofísicos elementales de transferencia de energía (TE), generación, transporte y recombinación de carga (GTRC) que ocurren entre cromóforos en el seno del polímero y en las interfaces orgánicas/inorgánicas (donde ocurre el contacto eléctrico entre polímero y electrodos) [@Zhu2009].  
 
 ## Motivación
 
-> Nota de Lola  
+> **Nota de Lola**  
 > razones por las que el autor ha decidido trabajar sobre el tema
 
-Muchos de estos dispositivos orgánicos-electrónicos se componen de películas ultra delgadas de polímero amorfos con alta a moderada heterogeneidad espacial y temporal. Esta heterogeneidad dificulta un estudio detallado de procesos TE y GTRC en estos materiales por técnicas convencionales que miden promedio de propiedades. El estudio de procesos TE y GTRC a nano-escala en películas poliméricas ultra-delgadas, nanopartículas (NPs) o moléculas poliméricas individuales utilizando técnicas avanzadas de microscopia de fluorescencia (por ejemplo espectroscopia de molécula/partícula individual) permite desentrañar la heterogeneidad mencionada [@Lupton2010], [@Lupton2012], [@Schwartz2008]. En particular estas técnicas permiten la determinación de la distribución real de propiedades relevantes mediante su medición de a una partícula por vez en lugar de medir el promedio de un gran conjunto de partículas o moléculas. Debido a que las especies cargadas (polarones, cationes radicales o aniones radicales) en polímeros conjugados resultantes de los procesos GTRC son generalmente no fluorescentes su determinación es indirecta y se basa en:
-
-a. Desactivación de fluorescencia de estados electrónicos excitados (excitones, cromóforos excitados) mediante especies cargadas [@Palacios2006], [@Palacios2007], [@Chang2008], [@Bolinger2008], [@Palacios2009_1], [@Bolinger2009], [@Fradkin2009], [@Chang2009], [@Palacios2009_2] o 
-b. Generación de estados electrónicos excitados emisores mediante recombinación de especies cargadas (electroluminiscencia, EL) [@Chang2008], [@Chang2009] , [@Nothaft2012_1], [@Nothaft2012_2]
-c. Así mismo también es posible determinar la TE de excitación entre los cromóforos intrínsecos del polímero y cromóforos dopantes incluidos en la matriz polimérica en pequeña cantidad con el fin de ajustar sus propiedades optoelectrónicas.
-
-Por otro lado para complementar, contrastar y validar los estudios y resultados experimentales es de gran utilidad la creación de *modelos computacionales que permitan simular los procesos* de TE y GTRC en esos materiales.
-
-El LMOA posee un equipamiento de última generación y un grupo de investigación de primer nivel. Desarrolla experimentación básica publicando sus trabajos en prestigiosas revistas y congresos. Se presenta el necesidad de comenzar a desarrollar simulaciones computacionales para avanzar en las investigaciones.
+Muchos de estos dispositivos orgánicos-electrónicos se componen de películas ultra delgadas de polímero amorfos con alta a moderada heterogeneidad espacial y temporal. Esta heterogeneidad dificulta un estudio detallado de procesos TE y GTRC en estos materiales por técnicas convencionales que miden promedio de propiedades. El estudio de procesos TE y GTRC a nano-escala en películas poliméricas ultra-delgadas, nanopartículas (NPs) o moléculas poliméricas individuales utilizando técnicas avanzadas de microscopia de fluorescencia (por ejemplo espectroscopia de molécula/partícula individual) permite desentrañar la heterogeneidad mencionada [@Lupton2012]. En particular estas técnicas permiten la determinación de la distribución real de propiedades relevantes mediante su medición de a una partícula por vez en lugar de medir el promedio de un gran conjunto de partículas o moléculas.
 
 ## Objetivos
 
-> Nota de Lola:  
-> Objetivos:
-> * general
-> * especificos
-> descripcion gral del trabajo (resumen)
+> **Nota de Lola**  
+> Objetivos:  
+> * general  
+> * especificos  
+> descripcion gral del trabajo (resumen)  
 > estructura de la memoria
 
 El objetivo general de este trabajo consiste en proponer un modelo (integral) computacional para el estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados. Este modelo comprende el proceso de modelización, simulación, validación y técnicas de computación de alto desempeño para calcular la energía de Quenching y poder así continuar las investigaciones del tema que realiza el Laboratorio de Microscopía Óptica Avanzada (LMOA) de la Facultad de Ciencias Exactas Físico-Químicas y Naturales (FCEFQyN) de la Universidad Nacional de Río Cuarto (UNRC).
+
+Dentro de los objetivos específicos se tiene el lograr maximizar el speedup considerando una utilización eficiente de los recursos computacionales con que contamos.
 
 Parte de los objetivos es el desarrollo de habilidades y capacidades que permitan optimizar el abordaje multidisciplinar requerido cuando se colabora con profesionales de disciplinas diversas, como es el caso de la investigación básica en el laboratorio.
 
@@ -49,11 +39,10 @@ En este contexto, los temas a abordar comprenden el análisis del sistema, la co
 
 Este proyecto de investigación articula la colaboración entre un grupo de trabajo perteneciente a la UNRC, compuesto por personal técnico, personal docente, alumnos de grado y postgrado a la Facultad de Ciencias Exactas Fisicoquímica y Naturales UNRC; docentes e investigadores del HPC4EAS Research Group perteneciente a la Universidad Autónoma de Barcelona y docentes e investigadores del Instituto de Investigación en Informática LIDI perteneciente a la UNLP. El grupo involucra el trabajo coordinado de 8 personas y cuenta con apoyo económico de SECyT UNRC, ANPCyT-MINCyT Argentina, MINCyT Córdoba y CONICET. Así mismo el proyecto está vinculado mediante la formación de estudiantes a los siguientes programas educativos: Licenciatura en Física y Licenciatura en Química UNRC, Doctorado en Ciencias Químicas UNRC, Doctorado en Física UBA y Maestría en Computación de Alto Desempeño UNLP.
 
-
 ## Resumen
-Se desarrolla una herramienta comutacional para calcular la eficiencia de Quenching.
+Se desarrolla un software para realizar simunaciones computacionales que permitan estudiar los procesos de TE y GTRC en los materiales descriptos.
 
-Mediante simulaciones de Montecarlo se pretende estudiar la eficiencia de Quenching para una nanopartícula (NP) determinada. Estas simulaciones van a ser contrastadas con las mediciones experimentales realizadas en el Laboratorio de Microscopia Optica Avanzada (LMOA) de la Universidad Nacional de Río Cuarto (UNRC).
+Mediante simulaciones de Montecarlo se estudia la eficiencia de Quenching para una nanopartícula (NP) determinada. Estas simulaciones serán contrastadas con las mediciones experimentales realizadas en el Laboratorio de Microscopia Óptica Avanzada (LMOA) de la Universidad Nacional de Río Cuarto (UNRC).
 
 En principio, son tres los experimentos en los que queremos corroborar la eficiencia de Quenching:
 
@@ -77,7 +66,7 @@ Se trabaja con alumnos de la carrera de Física para desarrollar capacidades de 
 
 ## Estructura de la monografía
 
-El **capítulo 2** desarrolla el marco teórico del fenómeno, resaltando los atnecedentes y el modelo conceptual.
+El **capítulo 2** desarrolla el marco teórico del fenómeno, resaltando los atecedentes y el modelo conceptual.
 
 El **capítulo 3** muestra los conceptos teóricos de la modelizacion, simulación, la computación de altas prestaciones y los lenguajes de programación coentífica que consideramos para este trabajo, justificando nuestra elección.
 
@@ -89,7 +78,7 @@ El **capítulo 6** desarrolla la valicación experimental mostrando el desarroll
 
 El **capítulo 7** detalla las conclusiones y trabajos futuros.
 
-El **capítulo 8** tiene los anexos (licencia del código).
+El **capítulo 8** tiene los anexos (integrantes del laboratorio, licencia del código).
 
 \begin{figure}[!bp]
 	\centering
@@ -97,6 +86,16 @@ El **capítulo 8** tiene los anexos (licencia del código).
 \end{figure}
 
 # Marco teórico del fenómeno
+
+Debido a que las especies cargadas (polarones, cationes radicales o aniones radicales) en polímeros conjugados resultantes de los procesos GTRC son generalmente no fluorescentes su determinación es indirecta y se basa en:
+
+a. Desactivación de fluorescencia de estados electrónicos excitados (excitones, cromóforos excitados) mediante especies cargadas [@Palacios2009_2] o 
+b. Generación de estados electrónicos excitados emisores mediante recombinación de especies cargadas (electroluminiscencia, EL) [@Nothaft2012_2]
+c. Así mismo también es posible determinar la TE de excitación entre los cromóforos intrínsecos del polímero y cromóforos dopantes incluidos en la matriz polimérica en pequeña cantidad con el fin de ajustar sus propiedades optoelectrónicas.
+
+Por otro lado para complementar, contrastar y validar los estudios y resultados experimentales es de gran utilidad **el desarrollo de modelos computacionales que permitan simular los procesos** de TE y GTRC en esos materiales.
+
+El LMOA posee un equipamiento de última generación y un grupo de investigación de primer nivel. Desarrolla experimentación básica publicando sus trabajos en prestigiosas revistas y congresos. Se presenta el necesidad de comenzar a desarrollar simulaciones computacionales para avanzar en las investigaciones.
 
 ## Antecedentes
 
@@ -135,6 +134,8 @@ P=\frac{\alpha}{N_0} = 1-e^{-kt}
 \end{equation}
 
 ## Cálculo del Exciton Diffusion Length 1 dimensión
+
+**Caminata aleatoria 1d.**
 
 Consideremos una caminata aleatoria unidimensional, que en cada paso recorre una distancia $\epsilon$, y que tiene la misma probabilidad de caminar hacia la izquierda que hacia la derecha. La distancia entre el origen y $N$ pasos después es
 
@@ -207,6 +208,8 @@ L_D = \sqrt{N} \epsilon
 \end{equation}
 
 ## Cálculo del Exciton Diffusion Length 3 dimensiones
+
+**Caminata aleatoria 3d.**
 
 En tres dimensiones la situación es matemáticamente más compleja pero arroja el mismo resultado. Supongamos una caminata aleatoria tridimensional con la misma probabilidad de caminar hacia todas las direcciones. Supongamos que el largo de cada paso es $\epsilon$, de modo que las componentes cartesianas de cada paso $i$ deben cumplir
 
@@ -548,7 +551,7 @@ El Laboratorio de Microscopía Óptica Avanzada (LMOA) es dirigido por el Dr. Ro
 	\includegraphics[width=3.5cm]{img/by.eps}
 \end{wrapfigure}
 
-Esta obra está bajo Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0) \href{http://creativecommons.org/licenses/by/4.0}{http://creativecommons.org/licenses/by/4.0}
+Este documento esta realizado bajo licencia Creative Commons “Reconocimiento 4.0 Internacional” (CC BY 4.0) \href{http://creativecommons.org/licenses/by/4.0/deed.es}{http://creativecommons.org/licenses/by/4.0/deed.es}
 
 ## Licencia del código
 

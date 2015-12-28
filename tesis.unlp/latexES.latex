@@ -1,4 +1,13 @@
+% pandoc-templates: 
+% https://github.com/jgm/pandoc-templates/
+% default.latex:
+% https://github.com/jgm/pandoc-templates/blob/master/default.latex
+
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+
+% en una actualización de pandoc saltó este error: Undefined control sequence
+% l.216 \tightlist , por eso fue necesario la sig. macro:
+\def\tightlist{} 
 
 \usepackage[cc]{titlepic}
 \bibliographystyle{alpha}
@@ -10,7 +19,7 @@
     type={CC},
     modifier={by},
     version={4.0},
-    lang={Spanish},
+    lang={spanish},
     imagewidth={2cm},
 ]{doclicense}
 
@@ -180,22 +189,22 @@ $endif$
 	{\scshape\LARGE Facultad de Informática \par}	
 	\vspace{1cm}
 	{\scshape\Large Trabajo Final Integrador que será presentado para obtener el grado de\par}
-	{\scshape\Large Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid\par}
+	{\scshape\Large\bfseries Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid\par}
 	\vspace{1.5cm}
 	{\huge\LARGE\itshape Estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados. \par}
 	{\huge\LARGE\itshape Modelización, simulación y validación.\par}
 	\vspace{2cm}
-	{\Large\itshape Daniel Arnoldo \textsc{Bellomo}\par}
+	{\Large Daniel Arnoldo \textsc{Bellomo}\par}
 	\vfill
 	Directores\par
-	Dra. Dolores Isabel \textsc{Rexachs del Rosario} y Dr. Ricardo Marcelo \textsc{Naiouf.}
+	Dra. Dolores Isabel \textsc{Rexachs del Rosario} y Dr. Ricardo Marcelo \textsc{Naiouf}
 
 	\vfill
 
 % Bottom of the page
-	{\large versión \today (draft)\par}
-	\vspace{0.5cm}
-	\doclicenseImage
+	{\large versión \textsc{(draft)} \today \par}
+	\vspace{0.7cm}
+	\raggedleft{}{\doclicenseImage}
 	%\doclicenseThis
 \end{titlepage}
 
