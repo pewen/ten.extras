@@ -1,78 +1,48 @@
-% Estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados.  
-Modelización, simulación y validación.
-% Trabajo Final Integrador que será presentado para obtener el grado de  
-Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid  
-Facultad de Informática  
-Universidad Nacional de La Plata
-% Versión 2015.12.04.00 (draft)
-
-\newpage
-
----
-    
-
----
-
 \begin{figure}[!bp]
-\centering
-\includegraphics[scale=1]{img/cc_by.png}
+	\centering
+	\includegraphics[width=17.5cm]{img/first+draft.jpg}
 \end{figure}
 
-# Motivación
+# Introducción
 
-Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares [@Lindstrom2006], [@Oregan1991], [@Gratzel2001], [@Bach1998], [@Asbury2001], diodos emisores de luz (OLED) [@Kulkarni2004], [@Chou2007], [@Gather2011], transistores de efecto campo (OFET) [@Mabeck2006], [@Dimitrakopoulos2002], [@Sirringhaus2005], [@Zaumseil2007], memorias moleculares [@Scott2007], etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos [@Lupton2010], [@Lupton2012], [@Schwartz2008]. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
+> **Nota de Lola**  
+> planteamiento general del tema
+
+Los polímeros conjugados son materiales orgánicos semiconductores de gran relevancia debido a su actual aplicación en dispositivos orgánicos-electrónicos tales como celdas solares [@Lindstrom2006], diodos emisores de luz (OLED) [@Kulkarni2004], transistores de efecto campo (OFET) [@Mabeck2006], memorias moleculares [@Scott2007], etc. El modelo típico de la estructura electrónica de polímeros conjugados considera que las excitaciones electrónicas en cada cadena polimérica se limitan a segmentos relativamente cortos (de 5 a 15 monómeros) denominados cromóforos [@Lupton2010]. Estos cromóforos actúan en gran medida de forma independiente de manera tal que una cadena de polímero conjugado es vista como un sistema multi-cromofórico en el que la mayoría de la complejidad electrónica es consecuencia de las interacciones entre cromóforos.  
 Consecuentemente, el funcionamiento y desempeño de dispositivos orgánicos-electrónicos basados en polímeros conjugados depende en gran medida de procesos fotofísicos elementales de transferencia de energía (TE), generación, transporte y recombinación de carga (GTRC) que ocurren entre cromóforos en el seno del polímero y en las interfaces orgánicas/inorgánicas (donde ocurre el contacto eléctrico entre polímero y electrodos) [@Zhu2009].  
-Muchos de estos dispositivos orgánicos-electrónicos se componen de películas ultra delgadas de polímero amorfos con alta a moderada heterogeneidad espacial y temporal. Esta heterogeneidad dificulta un estudio detallado de procesos TE y GTRC en estos materiales por técnicas convencionales que miden promedio de propiedades. El estudio de procesos TE y GTRC a nano-escala en películas poliméricas ultra-delgadas, nanopartículas (NPs) o moléculas poliméricas individuales utilizando técnicas avanzadas de microscopia de fluorescencia (por ejemplo espectroscopia de molécula/partícula individual) permite desentrañar la heterogeneidad mencionada [@Lupton2010], [@Lupton2012], [@Schwartz2008]. En particular estas técnicas permiten la determinación de la distribución real de propiedades relevantes mediante su medición de a una partícula por vez en lugar de medir el promedio de un gran conjunto de partículas o moléculas. Debido a que las especies cargadas (polarones, cationes radicales o aniones radicales) en polímeros conjugados resultantes de los procesos GTRC son generalmente no fluorescentes su determinación es indirecta y se basa en:
 
-a. desactivación de fluorescencia de estados electrónicos excitados (excitones, cromóforos excitados) mediante especies cargadas [@Palacios2006], [@Palacios2007], [@Chang2008], [@Bolinger2008], [@Palacios2009_1], [@Bolinger2009], [@Fradkin2009], [@Chang2009], [@Palacios2009_2] o 
-b. generación de estados electrónicos excitados emisores mediante recombinación de especies cargadas (electroluminiscencia, EL) [@Chang2008], [@Chang2009] , [@Nothaft2012_1], [@Nothaft2012_2]
-c. Así mismo también es posible determinar la TE de excitación entre los cromóforos intrínsecos del polímero y cromóforos dopantes incluidos en la matriz polimérica en pequeña cantidad con el fin de ajustar sus propiedades optoelectrónicas.
+## Motivación
 
-Por otro lado para complementar, contrastar y validar los estudios y resultados experimentales es de gran utilidad la creación de modelos computacionales que permitan simular los procesos de TE y GTRC en esos materiales.
+> **Nota de Lola**  
+> razones por las que el autor ha decidido trabajar sobre el tema
 
-- - -
-
-                              (FALTAN LAS REFERENCIAS)
-
-- - - 
+Muchos de estos dispositivos orgánicos-electrónicos se componen de películas ultra delgadas de polímero amorfos con alta a moderada heterogeneidad espacial y temporal. Esta heterogeneidad dificulta un estudio detallado de procesos TE y GTRC en estos materiales por técnicas convencionales que miden promedio de propiedades. El estudio de procesos TE y GTRC a nano-escala en películas poliméricas ultra-delgadas, nanopartículas (NPs) o moléculas poliméricas individuales utilizando técnicas avanzadas de microscopia de fluorescencia (por ejemplo espectroscopia de molécula/partícula individual) permite desentrañar la heterogeneidad mencionada [@Lupton2012]. En particular estas técnicas permiten la determinación de la distribución real de propiedades relevantes mediante su medición de a una partícula por vez en lugar de medir el promedio de un gran conjunto de partículas o moléculas.
 
 ## Objetivos
-El objetivo general de este trabajo consiste en presentar el desarrollo completo del aporte en las áreas de modelado, simulación, validación y computación de alto desempeño que se ha realizado a la investigación del Laboratorio de Microscopía Óptica Avanzada (LMOA) de la Facultad de Ciencias Exactas Físico-Químicas y Naturales (FCEFQyN) de la Universidad Nacional de Río Cuarto (UNRC).
 
-El LMOA posee un equipamiento de última generación y RRHH de primer nivel. Desarrolla experimentación básica publicando sus trabajos en las más prestigiosas revistas. Se presenta el necesidad de comenzar a desarrollar simulaciones computacionales para avanzar en las investigaciones.
+> **Nota de Lola**  
+> Objetivos:  
+> * general  
+> * especificos  
+> descripcion gral del trabajo (resumen)  
+> estructura de la memoria
+
+El objetivo general de este trabajo consiste en proponer un modelo (integral) computacional para el estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados. Este modelo comprende el proceso de modelización, simulación, validación y técnicas de computación de alto desempeño para calcular la energía de Quenching y poder así continuar las investigaciones del tema que realiza el Laboratorio de Microscopía Óptica Avanzada (LMOA) de la Facultad de Ciencias Exactas Físico-Químicas y Naturales (FCEFQyN) de la Universidad Nacional de Río Cuarto (UNRC).
+
+Dentro de los objetivos específicos se tiene el lograr maximizar el speedup considerando una utilización eficiente de los recursos computacionales con que contamos.
 
 Parte de los objetivos es el desarrollo de habilidades y capacidades que permitan optimizar el abordaje multidisciplinar requerido cuando se colabora con profesionales de disciplinas diversas, como es el caso de la investigación básica en el laboratorio.
 
-En este contexto, los temas a abordar comprenden el análisis del sistema, la confección del modelo, validación de los resultados y optimización el código usando técnicasy estratégias de programación paralela y HPC.
+En este contexto, los temas a abordar comprenden el análisis del sistema, la confección del modelo, validación de los resultados y optimización el código usando técnicas y estratégias de programación paralela y HPC.
 
 ## Vinculación institucional
 
 Este proyecto de investigación articula la colaboración entre un grupo de trabajo perteneciente a la UNRC, compuesto por personal técnico, personal docente, alumnos de grado y postgrado a la Facultad de Ciencias Exactas Fisicoquímica y Naturales UNRC; docentes e investigadores del HPC4EAS Research Group perteneciente a la Universidad Autónoma de Barcelona y docentes e investigadores del Instituto de Investigación en Informática LIDI perteneciente a la UNLP. El grupo involucra el trabajo coordinado de 8 personas y cuenta con apoyo económico de SECyT UNRC, ANPCyT-MINCyT Argentina, MINCyT Córdoba y CONICET. Así mismo el proyecto está vinculado mediante la formación de estudiantes a los siguientes programas educativos: Licenciatura en Física y Licenciatura en Química UNRC, Doctorado en Ciencias Químicas UNRC, Doctorado en Física UBA y Maestría en Computación de Alto Desempeño UNLP.
 
-## Integrantes
-
-**Alumno**
-
-* Daniel Arnoldo Bellomo, alumno de la Maestría en Computación de alto Desempeño (Universidad Nacional de La Plata).
-
-**Directores**
-
-* Dra. Dolores Isabel Rexachs del Rosario (Universidad Autónoma de Barcelona)
-* Dr.  Rodrigo Emiliano Palacios (Universidad Nacional de Río Cuarto)
-* ??? (Universidad Nacional de La Plata)
-* ??? (Universidad Nacional de La Plata)
-* ??? (Universidad Autónoma de Barcelona)
-* ??? (Universidad Autónoma de Barcelona)
-* Dr. Carlos Alberto Chesta (Universidad Nacional de Río Cuarto)
-
-**Colaboradores**
-
-Integran el equipo del Laboratorio de Microscopía Óptica Avanzada (LMOA) y participan del presente trabajo: Lic. Rodrigo Ponsio (doctorando), Franco Bellomo y Lucas Bellomo (estudiantes de Lic. en Física).
-
 ## Resumen
-Se desarrolla una herramienta comutacional para calcular la eficiencia de Quenching.
+Se desarrolla un software para realizar simunaciones computacionales que permitan estudiar los procesos de TE y GTRC en los materiales descriptos.
 
-Mediante simulaciones de Montecarlo se pretende estudiar la eficiencia de Quenching para una nanopartícula (NP) determinada. Estas simulaciones van a ser contrastadas con las mediciones experimentales realizadas en el Laboratorio de Microscopia Optica Avanzada (LMOA) de la Universidad Nacional de Río Cuarto (UNRC).
+Mediante simulaciones de Montecarlo se estudia la eficiencia de Quenching para una nanopartícula (NP) determinada. Estas simulaciones serán contrastadas con las mediciones experimentales realizadas en el Laboratorio de Microscopia Óptica Avanzada (LMOA) de la Universidad Nacional de Río Cuarto (UNRC).
 
 En principio, son tres los experimentos en los que queremos corroborar la eficiencia de Quenching:
 
@@ -84,17 +54,52 @@ El LMOA tiene amplia experiencia en la investigación experimental, pero destaco
 
 ## Publicaciones relacionadas a este trabajo
 * 11º Encuentro Regional de Probabilidades y Estadística Matemática ERPEM  
-Departamento de Matemáticas, FCEFQyN, UNRC, 2-3 de diciembre, 2015. \footnote{11º Encuentro Regional de Probabilidades y Estadística Matemática (ERPEM), FCEFQyN UNRC \href{http://intra.exa.unrc.edu.ar/eventos/erpem}{http://intra.exa.unrc.edu.ar/eventos/erpem}}  
-Titulo: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelización y validación con datos experimentales* (poster) \href{https://github.com/pewen/ten.extras/raw/master/2015_ERPEM/poster_TEN_ERPEM_2015_comprimido.pdf}{http://tiny.cc/quc26x}
+Departamento de Matemáticas, FCEFQyN, UNRC, 2-3 de diciembre, 2015 \footnote{11º Encuentro Regional de Probabilidades y Estadística Matemática (ERPEM), FCEFQyN UNRC. \url{http://intra.exa.unrc.edu.ar/eventos/erpem}}  
+Titulo: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelización y validación con datos experimentales* (poster) \url{https://github.com/pewen/ten.extras/raw/master/2015_ERPEM/poster_TEN_ERPEM_2015_comprimido.pdf}
 
 * XVII Juan José Giambiagi Winter School. Light and light-based technologies.  
-Departamento de Física J.J. Giambiagi, FCEyN, UBA, 3-7 de agosto, 2015. \footnote{XVII Giambiagi Winter School, Departamento de Física, FCEyN UBA \href{http://giambiagi2015.df.uba.ar}{http://giambiagi2015.df.uba.ar}}  
-Título: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelado y contraste con datos experimentales* (poster) \href{https://github.com/pewen/ten.extras/raw/master/2015_Giambiagi/poster_Giambiani.compressed.pdf}{http://tiny.cc/yikz6x}
+Departamento de Física J.J. Giambiagi, FCEyN, UBA, 3-7 de agosto, 2015 \footnote{XVII Giambiagi Winter School, Departamento de Física, FCEyN UBA. \url{http://giambiagi2015.df.uba.ar}}  
+Título: *Transferencia de energía en nanopartículas de polímeros conjugados. Modelado y contraste con datos experimentales* (poster) \url{https://github.com/pewen/ten.extras/raw/master/2015_Giambiagi/poster_Giambiani.compressed.pdf}
 
 ## Formación de RRHH en programación científica
 Se trabaja con alumnos de la carrera de Física para desarrollar capacidades de programación científica y HPC aplicadas a física computacional. Esta actividad pemitite la integración por parte de los alumnos en proyectos reales de la facultad, permitiendo formar parte de grupos de investigación y hacer aportes desde su área estecífica de formación desarrollando modelos computacionales.
 
+## Estructura de la monografía
+
+El **capítulo 2** desarrolla el marco teórico del fenómeno, resaltando los atecedentes y el modelo conceptual.
+
+El **capítulo 3** muestra los conceptos teóricos de la modelizacion, simulación, la computación de altas prestaciones y los lenguajes de programación coentífica que consideramos para este trabajo, justificando nuestra elección.
+
+El **capítulo 4** detalla la propuesta que se lleva a cabo: modelo conceptual, modelo computacional, simulaciones de Monte Carlo y simulaciones de altas prestaciones.
+
+El **capítulo 5** desarrolla el modelo computacional, el diseño del simulador, el tipo de simulación, la escalabilidad y el paralelismo.
+
+El **capítulo 6** desarrolla la valicación experimental mostrando el desarrollo de los experimentos y el entorno experimental.
+
+El **capítulo 7** detalla las conclusiones y trabajos futuros.
+
+El **capítulo 8** tiene los anexos (integrantes del laboratorio, licencia del código).
+
+\begin{figure}[!bp]
+	\centering
+	\includegraphics[width=10cm]{img/stamp-draft.jpg}
+\end{figure}
+
 # Marco teórico del fenómeno
+
+Debido a que las especies cargadas (polarones, cationes radicales o aniones radicales) en polímeros conjugados resultantes de los procesos GTRC son generalmente no fluorescentes su determinación es indirecta y se basa en:
+
+a. Desactivación de fluorescencia de estados electrónicos excitados (excitones, cromóforos excitados) mediante especies cargadas [@Palacios2009_2] o 
+b. Generación de estados electrónicos excitados emisores mediante recombinación de especies cargadas (electroluminiscencia, EL) [@Nothaft2012_2]
+c. Así mismo también es posible determinar la TE de excitación entre los cromóforos intrínsecos del polímero y cromóforos dopantes incluidos en la matriz polimérica en pequeña cantidad con el fin de ajustar sus propiedades optoelectrónicas.
+
+Por otro lado para complementar, contrastar y validar los estudios y resultados experimentales es de gran utilidad **el desarrollo de modelos computacionales que permitan simular los procesos** de TE y GTRC en esos materiales.
+
+El LMOA posee un equipamiento de última generación y un grupo de investigación de primer nivel. Desarrolla experimentación básica publicando sus trabajos en prestigiosas revistas y congresos. Se presenta el necesidad de comenzar a desarrollar simulaciones computacionales para avanzar en las investigaciones.
+
+## Antecedentes
+
+Para realizar el trabajo se toma como antecedente el paper [@McNeill2008]
 
 ## Modelo conceptual
 
@@ -129,6 +134,8 @@ P=\frac{\alpha}{N_0} = 1-e^{-kt}
 \end{equation}
 
 ## Cálculo del Exciton Diffusion Length 1 dimensión
+
+**Caminata aleatoria 1d.**
 
 Consideremos una caminata aleatoria unidimensional, que en cada paso recorre una distancia $\epsilon$, y que tiene la misma probabilidad de caminar hacia la izquierda que hacia la derecha. La distancia entre el origen y $N$ pasos después es
 
@@ -202,6 +209,8 @@ L_D = \sqrt{N} \epsilon
 
 ## Cálculo del Exciton Diffusion Length 3 dimensiones
 
+**Caminata aleatoria 3d.**
+
 En tres dimensiones la situación es matemáticamente más compleja pero arroja el mismo resultado. Supongamos una caminata aleatoria tridimensional con la misma probabilidad de caminar hacia todas las direcciones. Supongamos que el largo de cada paso es $\epsilon$, de modo que las componentes cartesianas de cada paso $i$ deben cumplir
 
 \begin{equation}
@@ -254,9 +263,10 @@ Y el Exciton Diffusion Length es igual que para el caso de una dimensión
 L_D = \sqrt{N} \epsilon
 \end{equation}
 
-## Artículo de referencia
-
-Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles, J. Phys. Chem. C 2008, 112, 1772-1781. American Chemical Society.
+\begin{figure}[!bp]
+	\centering
+	\includegraphics[]{img/draft_1.jpg}
+\end{figure}
 
 # Estado del arte
 
@@ -266,10 +276,10 @@ Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer i
 
 ## Computación de altas prestación
 
-**GPU** (introduicción cap 2, Piccoli)
+**GPU**
 
 Las unidades de procesamiento gráfico, GPU, se han convertido en una parte integral de los sistemas actuales de computación. El bajo costo y marcado incremento del rendimiento, permitieron su fácil incorporación al mercado. En los últimos años, su evolución implicó un cambio, dejó de ser un procesador gráfico potente para convertirse en un co-procesador apto para el desarrollo de aplicaciones paralelas de propósito general con demanda de anchos de banda de procesamiento y de memoria sustancialmente superiores a los ofrecidos por la CPU.  
-La rápida adopción de las GPU como computadora paralela de propósito general se vio favorecida por el incremento tanto de sus capacidades como de las facilidades y herramientas de programación. Actualmente la GPU se ha posicionado como una alternativa atractiva a los sistemas tradicionales de computación paralela.  
+La rápida adopción de las GPU como computadora paralela de propósito general se vio favorecida por el incremento tanto de sus capacidades como de las facilidades y herramientas de programación. Actualmente la GPU se ha posicionado como una alternativa atractiva a los sistemas tradicionales de computación paralela [@Piccoli2011:_GPU].
 
 
 ## Lenguajes de programación científica
@@ -284,19 +294,32 @@ Si el factor que va a desidir la elección del lenguaje de programación es el t
 
 Lenguaje creado a en el año 1991 (por lo que podemos considerarlo "moderno" comparandolo con Fortran).
 
-Ecosistema científico: IPython/Jupyter, Numpy, Matplotlib, Scipy. Entorno de programación interactivo de vanguardia, simple, libre, gratuito y multiplataforma.
+Ecosistema científico: IPython/Jupyter [@PER-GRA:2007], Numpy, Matplotlib, Scipy. Entorno de programación interactivo de vanguardia, simple, libre, gratuito y multiplataforma.
 
 Numpy brinda funcionalidades para trabajar con matrices.
 
-Scipy es la biblioteca científica y usa Numpy como base.
+Scipy es la biblioteca científica.
 
-Matplotlib
+Matplotlib 
 
 **Julia**
 
 Fue diseñado para computación distribuida y en paralelo, 
 
+**CUDA C**
 
+**OpenCL**
+
+**PyCUDA y PyOpenCL**
+[@kloeckner_pycuda_2012]
+
+**MPI4Python**
+[@Dalcin2005] 
+
+\begin{figure}[!bp]
+	\centering
+	\includegraphics[]{img/draft_1.jpg}
+\end{figure}
 
 # Propuesta
 
@@ -304,9 +327,14 @@ Fue diseñado para computación distribuida y en paralelo,
 
 ## Modelo computacional
 
-## Simulaciones de Montecarlo
+## Simulaciones de Monte Carlo
 
 ## Simulación de altas prestaciones
+
+\begin{figure}[!bp]
+\centering
+\includegraphics[width=10cm]{img/draft-stamp.jpg}
+\end{figure}
 
 # Desarrollo computacional
 Se consideran dos desarrollos
@@ -345,6 +373,11 @@ Se consideran dos desarrollos
 - mayor cantidad de experimentos.
 - speedup
 
+\begin{figure}[!bp]
+	\centering
+	\includegraphics[]{img/draft_1.jpg}
+\end{figure}
+
 # Validación experimental
 
 ## Diseño de los experimentos
@@ -371,7 +404,7 @@ ax.scatter(x, y, z)
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/ptos_en_superficie_1.png}
+	\includegraphics[width=13cm]{img/ptos_en_superficie_1.png}
 	\caption{\label{fig:ptos_en_superficie_1} distribución no uniforme}
 \end{figure}
 
@@ -395,7 +428,7 @@ ax.scatter(x, y, z)
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/ptos_en_superficie_2.png}
+	\includegraphics[width=15cm]{img/ptos_en_superficie_2.png}
 	\caption{\label{fig:ptos_en_superficie_2} distribución uniforme}
 \end{figure}
 
@@ -425,7 +458,7 @@ ax.scatter(x, y, z)
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/ptos_en_interior_1.png}
+	\includegraphics[width=15cm]{img/ptos_en_interior_1.png}
 	\caption{\label{fig:ptos_en_interior_1} distribución no uniforme}
 \end{figure}
 
@@ -461,7 +494,7 @@ ax.scatter(x_l, y_l, z_l)
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{img/ptos_en_interior_2.png}
+	\includegraphics[width=15cm]{img/ptos_en_interior_2.png}
 	\caption{\label{fig:ptos_en_interior_2} distribución uniforme}
 	\end{figure}
 
@@ -473,8 +506,6 @@ El el foro de matemática \href{https://math.stackexchange.com/questions/87230/p
 
 Suponemos la esfera centrada en el origen $(0,0,0)$.
 
-
-
 \newpage
 
 ## Entorno experimental
@@ -483,9 +514,14 @@ Raspberry Pi para el desarrollo y validación
 
 IPython/Jupyter para mostrar avances
 
-## Experimentos y discusión. (precisión y speedup)
+## Experimentos y discusión. (precisión y speedup) 
 
 ## Ciencia reproducible
+
+\begin{figure}[!bp]
+\centering
+\includegraphics[width=10cm]{img/draft-stamp.jpg}
+\end{figure}
 
 # Conclusiones y trabajos futuros
 
@@ -493,63 +529,35 @@ Fortalecer el trabajo multi/interdisciplinar.
 
 **Trabajos Futuros**
 
-Analizar métodos alternativos al que usa Numpy para generar números random, por ej:
+Analizar performance del "caminante aleatorio tridimencional" usando distintos lenguajes (Julia, Fortran, C) y estatégias de optimización/paralelización, con el objetivo de mejorar los tiempos de ejecución.
 
-* The Scalable Parallel Random Number Generators Library (SPRNG)
+Analizar métodos alternativos al que usa Numpy para generar números random, por ej: The Scalable Parallel Random Number Generators Library (SPRNG)
 http://www.sprng.org
 
-# Referencias / Citas
-
-Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles, J. Phys. Chem. C 2008, 112, 1772-1781. American Chemical Societ
-
-van Rossum, G. and Drake, F. L. (eds), 2006. Python Reference Manual,  
-Python Software Foundation,. http://docs.python.org/ref/ref.html.
-
-Fernando Pérez, Brian E. Granger, IPython: A System for Interactive Scientific Computing, Computing in Science and Engineering, vol. 9, no. 3, pp. 21-29, May/June 2007, doi:10.1109/MCSE.2007.53. URL: \href{http://ipython.org}{http://ipython.org}
-
-Numpy
-
-MPI4Python
-
-Hunter, J. D., Matplotlib: A 2D graphics environment, Computing In Science \& Engineering, Volume 9, Numbre 3, Pages 90--95. publisher IEEE COMPUTER SOC, year 2007.
-
-Ma. Belén Oviedo, Thesis: Dinámica Cuántica de Sistemas Moleculares Complejos en Tiempo Real. URL: \href{http://tiny.cc/57316x}{http://tiny.cc/57316x}
-
-Cory Simon, Accelerating Materials Discovery with CUDA.  
-URL: \href{http://devblogs.nvidia.com/parallelforall/accelerating-materials-discovery-cuda}{http://devblogs.nvidia.com/parallelforall/accelerating-materials-discovery-cuda}
-
-Nate Eldredge, Picking random points in the volume of sphere with uniform probability  
-URL: \href{http://math.stackexchange.com/questions/87230/picking-random-points-in-the-volume-of-sphere-with-uniform-probability}{http://math.stackexchange.com/questions/87230/picking-random-points-in-the-volume-of-sphere-with-uniform-probability}
-
-UNC - FAMAF- GPGPU Computing Group \href{http://www.famaf.unc.edu.ar/grupos/GPGPU/}{http://www.famaf.unc.edu.ar/grupos/GPGPU/}
-
-Emmanuel N. Millán , Silvana B. Goirán, María Fabiana Piccoli, Carlos García Garino, Julieta N. Aranibar, Eduardo M. Bringa, Monte Carlo simulations of settlement dynamics in GPUs, DOI:10.1007/s10586-015-0501-5, Cluster Computing, Springer US.
-
-Hans Petter Langtangen, Monte Carlo Simulation with Cython, Sep 24, 2012.  
-https://hplgit.github.io/teamods/MC_cython/main_MC_cython.pdf
-
-# Bibliografía
-- Changfeng Wu, Yueli Zheng, Craig Szymanski and Jason McNeill: Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles. The Journal of Physical Chemistry C (ACS Publications).
-
-- C. A. Chung, Simulation Modeling Handbook: a Practical Approach, 2004, ISBN-10: 0849312418
-
-- María Fabiana Piccoli, Computación de alto desempeño en GPU, La Plata, UNLP, 2011, ISBN-987-950-34-0759-2
-
-- Giancarlo Zaccone, Python Parallel Programming Cookbook, Packt, 2015, ISBN: 1785289586
-
-- Gabriele Lanaro, Python High Performance Programming, Packt, 2013, ISBN: 1783288450
-
-- Jesse M. Kinder Philip Nelson, A Student's Guide to Python for Physical Modeling, 2015, ISBN: 0691170509 
-
-- L. Felipe Martins, IPython Notebook Essentials, Packt, 2014,ISBN: 1783988347
+\begin{figure}[!bp]
+\centering
+\includegraphics[width=15cm]{img/draft-stamp.jpg}
+\end{figure}
 
 # Anexos
+
+## Integrantes del equipo del Laboratorio de Microscopía Óptica Avanzada
+
+El Laboratorio de Microscopía Óptica Avanzada (LMOA) es dirigido por el Dr. Rodrigo Emiliano Palacios. Integran el equipo y participan del presente trabajo: Lic. Rodrigo Ponsio (doctorando), Franco Bellomo y Lucas Bellomo (estudiantes de Lic. en Física).
+
+## Licencia del documento
+
+\begin{wrapfigure}{r}{0\textwidth}
+	\includegraphics[width=3.5cm]{img/by.eps}
+\end{wrapfigure}
+
+Este documento esta realizado bajo licencia Creative Commons “Reconocimiento 4.0 Internacional” (CC BY 4.0) \href{http://creativecommons.org/licenses/by/4.0/deed.es}{http://creativecommons.org/licenses/by/4.0/deed.es}
 
 ## Licencia del código
 
  The MIT License (MIT)
 
-Copyright © 2015 Ciencia reproducible
+Copyright © 2015 Laboratorio de Microscopia Óptica Avanzada UNRC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -557,5 +565,9 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+\begin{figure}[!bp]
+\centering
+\includegraphics[scale=1.6]{img/draft.jpg}
+\end{figure}
 
 # Bibliografía

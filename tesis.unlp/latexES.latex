@@ -1,13 +1,26 @@
+% pandoc-templates: 
+% https://github.com/jgm/pandoc-templates/
+% default.latex:
+% https://github.com/jgm/pandoc-templates/blob/master/default.latex
+
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
-\usepackage{draftwatermark}
-\SetWatermarkScale{1.5}
+% en una actualización de pandoc saltó este error: Undefined control sequence
+% l.216 \tightlist , por eso fue necesario la sig. macro:
+\def\tightlist{} 
+
+\usepackage[cc]{titlepic}
+\bibliographystyle{alpha}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkScale{1.5}
 
 \usepackage[
     type={CC},
     modifier={by},
     version={4.0},
-    lang={Spanish},
+    lang={spanish},
+    imagewidth={2cm},
 ]{doclicense}
 
 \usepackage{picinpar}
@@ -165,14 +178,39 @@ $endfor$
 
 \begin{document}
 $if(title)$
+\titlepic{\includegraphics[width=0.5\textwidth]{img/draft-stamp.jpg}}
 \maketitle
 $endif$
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.55\textwidth]{img/stamp-draft.jpg}\par\vspace{1cm}
+	{\scshape\LARGE Universidad Nacional de La Plata \par}
+	{\scshape\LARGE Facultad de Informática \par}	
+	\vspace{1cm}
+	{\scshape\Large Trabajo Final Integrador que será presentado para obtener el grado de\par}
+	{\scshape\Large\bfseries Especialista en Cómputo de Altas Prestaciones y Tecnologías Grid\par}
+	\vspace{1.5cm}
+	{\huge\LARGE\itshape Estudio de procesos de generación, transferencia y recombinación de carga y transferencia de energía en polímeros conjugados nano-estructurados. \par}
+	{\huge\LARGE\itshape Modelización, simulación y validación.\par}
+	\vspace{2cm}
+	{\Large Daniel Arnoldo \textsc{Bellomo}\par}
+	\vfill
+	Directores\par
+	Dra. Dolores Isabel \textsc{Rexachs del Rosario} y Dr. Ricardo Marcelo \textsc{Naiouf}
+
+	\vfill
+
+% Bottom of the page
+	{\large versión \textsc{(draft)} \today \par}
+	\vspace{0.7cm}
+	\raggedleft{}{\doclicenseImage}
+	%\doclicenseThis
+\end{titlepage}
+
 \begin{figure}[b]
 \centering
-  \includegraphics[scale=1.5]{img/UNLP.jpg}
-  %\includegraphics[width=0.15\linewidth]{img/cc_by.png}
-  \newline
-  \newline
+  \includegraphics[width=15cm]{img/UNLP.jpg}
   \newline
   \newline
   \newline

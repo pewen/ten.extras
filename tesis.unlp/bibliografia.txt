@@ -1,0 +1,48 @@
+# Referencias / Citas
+
+Changfeng Wu, Yueli Zheng, Craig Szymanski, and Jason McNeill, Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles, J. Phys. Chem. C 2008, 112, 1772-1781. American Chemical Societ
+
+van Rossum, G. and Drake, F. L. (eds), 2006. Python Reference Manual,  
+Python Software Foundation,. http://docs.python.org/ref/ref.html.
+
+Fernando Pérez, Brian E. Granger, IPython: A System for Interactive Scientific Computing, Computing in Science and Engineering, vol. 9, no. 3, pp. 21-29, May/June 2007, doi:10.1109/MCSE.2007.53. URL: \href{http://ipython.org}{http://ipython.org}
+
+Numpy
+
+MPI4Python
+
+Hunter, J. D., Matplotlib: A 2D graphics environment, Computing In Science \& Engineering, Volume 9, Numbre 3, Pages 90--95. publisher IEEE COMPUTER SOC, year 2007.
+
+
+Ma. Belén Oviedo, Thesis: Dinámica Cuántica de Sistemas Moleculares Complejos en Tiempo Real. URL: \href{http://tiny.cc/57316x}{http://tiny.cc/57316x}
+
+Cory Simon, Accelerating Materials Discovery with CUDA.  
+URL: \href{http://devblogs.nvidia.com/parallelforall/accelerating-materials-discovery-cuda}{http://devblogs.nvidia.com/parallelforall/accelerating-materials-discovery-cuda}
+
+Nate Eldredge, Picking random points in the volume of sphere with uniform probability  
+URL: \href{http://math.stackexchange.com/questions/87230/picking-random-points-in-the-volume-of-sphere-with-uniform-probability}{http://math.stackexchange.com/questions/87230/picking-random-points-in-the-volume-of-sphere-with-uniform-probability}
+
+UNC - FAMAF- GPGPU Computing Group \href{http://www.famaf.unc.edu.ar/grupos/GPGPU/}{http://www.famaf.unc.edu.ar/grupos/GPGPU/}
+
+Emmanuel N. Millán , Silvana B. Goirán, María Fabiana Piccoli, Carlos García Garino, Julieta N. Aranibar, Eduardo M. Bringa, Monte Carlo simulations of settlement dynamics in GPUs, DOI:10.1007/s10586-015-0501-5, Cluster Computing, Springer US.
+
+Hans Petter Langtangen, Monte Carlo Simulation with Cython, Sep 24, 2012.  
+https://hplgit.github.io/teamods/MC_cython/main_MC_cython.pdf
+
+
+
+# Bibliografía
+- Changfeng Wu, Yueli Zheng, Craig Szymanski and Jason McNeill: Energy Transfer in a Nanoscale Multichromophoric System: Fluorescent Dye-Doped Conjugated Polymer Nanoparticles. The Journal of Physical Chemistry C (ACS Publications).
+
+- C. A. Chung, Simulation Modeling Handbook: a Practical Approach, 2004, ISBN-10: 0849312418
+
+- María Fabiana Piccoli, Computación de alto desempeño en GPU, La Plata, UNLP, 2011, ISBN-987-950-34-0759-2
+
+- Giancarlo Zaccone, Python Parallel Programming Cookbook, Packt, 2015, ISBN: 1785289586
+
+- Gabriele Lanaro, Python High Performance Programming, Packt, 2013, ISBN: 1783288450
+
+- Jesse M. Kinder Philip Nelson, A Student's Guide to Python for Physical Modeling, 2015, ISBN: 0691170509 
+
+- L. Felipe Martins, IPython Notebook Essentials, Packt, 2014,ISBN: 1783988347
+
